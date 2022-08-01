@@ -1,61 +1,31 @@
 // Начните писать стили здесь
- @use "./blocks/header/main-header.scss";
-
- @use "./blocks/header/logo.scss";
-
- @use "./blocks/header/main-nav.scss";
-
- @use "./visually-hidden.scss";
-
- @use "./blocks/fonts.scss";
-
- @use "./blocks/banner.scss";
-
- @use "./blocks/page.scss";
-
- @use "./blocks/features.scss";
-
- @use "./blocks/banner-gift.scss";
-
- @use "./blocks/card.scss";
-
- @use "./blocks/catalog.scss";
-
- @use "./blocks/main-catalog.scss";
-
- @use "./blocks/product-example.scss";
-
- @use "./blocks/service.scss";
-
- @use "./blocks/show-more.scss";
-
- @use "./blocks/footer/footer.scss";
-
- @use "./blocks/form/additional.scss";
-
- @use "./blocks/form/checkbox-input.scss";
-
- @use "./blocks/form/control.scss";
-
- @use "./blocks/form/cooperation.scss";
-
- @use "./blocks/form/criteria.scss";
-
- @use "./blocks/form/email.scss";
-
- @use "./blocks/form/field-group.scss";
-
- @use "./blocks/form/field.scss";
-
- @use "./blocks/form/form.scss";
-
- @use "./blocks/form/main-form.scss";
-
- @use "./blocks/form/phone.scss";
-
- @use "./blocks/form/questionnaire.scss";
-
- @use "./blocks/form/radio-input.scss";
-
- @use "./blocks/additional-products.scss";
-
+@use "./blocks/header/main-header.scss";
+@use "./blocks/header/logo.scss";
+@use "./blocks/header/main-nav.scss";
+@use "./visually-hidden.scss";
+@use "./blocks/fonts.scss";
+@use "./blocks/banner.scss";
+@use "./blocks/page.scss";
+@use "./blocks/features.scss";
+@use "./blocks/banner-gift.scss";
+@use "./blocks/card.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/main-catalog.scss";
+@use "./blocks/product-example.scss";
+@use "./blocks/service.scss";
+@use "./blocks/show-more.scss";
+@use "./blocks/footer/footer.scss";
+@use "./blocks/form/additional.scss";
+@use "./blocks/form/checkbox-input.scss";
+@use "./blocks/form/control.scss";
+@use "./blocks/form/cooperation.scss";
+@use "./blocks/form/criteria.scss";
+@use "./blocks/form/email.scss";
+@use "./blocks/form/field-group.scss";
+@use "./blocks/form/field.scss";
+@use "./blocks/form/form.scss";
+@use "./blocks/form/main-form.scss";
+@use "./blocks/form/phone.scss";
+@use "./blocks/form/questionnaire.scss";
+@use "./blocks/form/radio-input.scss";
+@use "./blocks/additional-products.scss";

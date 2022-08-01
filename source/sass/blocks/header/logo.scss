@@ -1,0 +1,27 @@
+.logo {
+  position: relative;
+  padding-left: 80px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+}
+
+.main-header__logo::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 33px;
+  height: 37px;
+  background-image: url("/source/img/icone/logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
