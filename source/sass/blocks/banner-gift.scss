@@ -1,0 +1,27 @@
+.banner-gift {
+  position: relative;
+  background-image: url("/source/img/background-main-bannerjpg.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(104, 183, 56, 0.85);
+  padding-top: 187px;
+  padding-right: 60px;
+  padding-left: 60px;
+
+  &::before{
+    position: absolute;
+    top: 59px;
+    right: 50%;
+    width: 78px;
+    height: 80px;
+  }
+}
+
+.banner-gift__container {
+}
+
+.banner-gift__text {
+  margin: 0;
+}
+
+.banner-gift__text--vertical-gift {
+}
