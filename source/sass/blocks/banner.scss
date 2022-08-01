@@ -10,11 +10,13 @@
 }
 
 .main-banner__container {
+  background-image: url("../img/background-main-bannerjpg.jpg");
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("/source/img/background-main-bannerjpg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+
 }
+
 .main-banner__title {
   font-style: normal;
   font-size: 36px;
@@ -23,11 +25,16 @@
   margin: 0;
   margin-bottom: 25px;
 }
+
 .main-banner__subtitle {
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
+
 .main-banner__image-wrapper {
 }
+
 .main-banner__button {
   text-decoration: none;
   color: inherit;
@@ -44,6 +51,6 @@
   }
 
   &:active {
-    color: lighten($color: #ffffff, $amount: 30);
+    opacity: 0.4;
   }
 }

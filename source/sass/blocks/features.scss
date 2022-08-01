@@ -23,18 +23,26 @@
 .features__text {
   margin: 0;
   padding-left: 80px;
+}
 
-  &--leaf {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("/source/img/icone/leaf.jpg");
-    background-position: center;
+.features__text--leaf {
+
+  &::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/icone/leaf.jpg");
+  background-size: contain;
+  background-position: center;
   }
 
-  &--worm-water{
+}
+
+.features__text--worm-water{
+
+  &::before{
     position: absolute;
     left: 0;
     top: 0;
@@ -44,23 +52,30 @@
     background-position: center;
   }
 
-  &--knife{
+}
+
+.features__text--knife{
+
+  &::before{
     position: absolute;
     left: 0;
     top: 0;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/icone/knife.jpg");
+    background-image: url("../source/img/icone/knife.jpg");
     background-position: center;
   }
+}
 
-  &--alarm{
+.features__text--alarm{
+
+  &::before{
     position: absolute;
     left: 0;
     top: 0;
     width: 60px;
     height: 60px;
-    background-image: url("/source/img/icone/alarm.jpg");
+    background-image: url("../source/img/icone/alarm.jpg");
     background-position: center;
   }
 }
