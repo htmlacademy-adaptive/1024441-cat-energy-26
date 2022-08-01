@@ -1,0 +1,31 @@
+.main-nav {
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  padding: 20px 144px 24px 144px;
+  color: inherit;
+}
+
+.main-nav__link--current {
+}

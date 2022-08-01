@@ -1,7 +1,7 @@
 .product-example {
   padding: 25px 0 40px 0;
   background-color: #eaeaea;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
 }
 
 .product-example__title {
@@ -13,15 +13,12 @@
   line-height: 40px;
 }
 
-.product-example__container {
-}
-
 .product-example__discription {
   margin-bottom: 40px;
 }
 
 .product-example__discription-text {
-  font-family: "Arial";
+  font-family: "Arial", "Helvetica", sans-serif;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -45,7 +42,7 @@
 }
 
 .product-example__item-discription {
-  font-family: "Arial";
+  font-family: "Arial", "Helvetica", sans-serif;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -59,32 +56,8 @@
   margin: 0;
 }
 
-.product-example__range-slider {
-}
-
-.range-slider__slide {
-}
-
-.slide {
-}
-
-.slide__image-wrapper {
-}
-
-.slide__image--left {
-}
-
-.lide__image--right {
-}
-
-.range-slider__range {
-}
-
-.range {
-}
-
 .range__range-before {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -94,23 +67,8 @@
   color: #000000;
 }
 
-.range__scale {
-}
-
-.scale {
-}
-
-.scale__range-bar {
-}
-
-.range-bar {
-}
-
-.range-bar__button {
-}
-
 .range__range-became {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;

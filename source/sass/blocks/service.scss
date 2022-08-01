@@ -9,20 +9,17 @@
   list-style: none;
 }
 
-.service__container {
-}
-
 .service__item {
   padding: 24px 33px 18px 20px;
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 
 .service__title {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -36,7 +33,7 @@
 
 .service__button {
   position: relative;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
