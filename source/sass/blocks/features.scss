@@ -3,7 +3,7 @@
 }
 
 .features__title {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -26,23 +26,20 @@
 }
 
 .features__text--leaf {
-
-  &::before{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/icone/leaf.jpg");
-  background-size: contain;
-  background-position: center;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icone/leaf.jpg");
+    background-size: contain;
+    background-position: center;
   }
-
 }
 
-.features__text--worm-water{
-
-  &::before{
+.features__text--worm-water {
+  &::before {
     position: absolute;
     left: 0;
     top: 0;
@@ -51,12 +48,10 @@
     background-image: url("/source/img/icone/worm-water.jpg");
     background-position: center;
   }
-
 }
 
-.features__text--knife{
-
-  &::before{
+.features__text--knife {
+  &::before {
     position: absolute;
     left: 0;
     top: 0;
@@ -67,9 +62,8 @@
   }
 }
 
-.features__text--alarm{
-
-  &::before{
+.features__text--alarm {
+  &::before {
     position: absolute;
     left: 0;
     top: 0;
