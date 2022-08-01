@@ -1,0 +1,37 @@
+
+.questionnaire {
+  margin-bottom: 24px;
+}
+
+.questionnaire__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.questionnaire__item {
+  margin-bottom: 14px;
+
+  &--last-one{
+    margin-bottom: 0;
+  }
+}
+
+.questionnaire__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.questionnaire__field {
+
+  &::placeholder{
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}

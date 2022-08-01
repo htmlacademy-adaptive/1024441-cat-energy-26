@@ -1,0 +1,69 @@
+.card {
+}
+
+.card__image-wrapper {
+}
+
+.card__image {
+}
+
+.card__description {
+}
+
+.card__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 18px;
+}
+
+.card__table {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card__table-item {
+}
+
+.card__weight {
+}
+
+.card__weight-value {
+}
+
+.card__taste {
+}
+
+.cardd__taste-value {
+}
+
+.card__price {
+}
+
+.card__price-value {
+}
+
+.card__link {
+  padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+
+  &:hover{
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: lighten($color: #ffffff, $amount: 30);
+  }
+}
+
+.card__table-wrapper {
+}
