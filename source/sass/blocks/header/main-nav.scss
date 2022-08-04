@@ -6,6 +6,15 @@
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    .main-nav__container {
+      width: 440px;
+      margin-left: auto;
+    }
+  }
 }
 
 .main-nav__toggle {
@@ -36,18 +45,7 @@
   color: inherit;
 }
 
-@media (min-width: $tablet-width) {
-  display: flex;
-
-  .main-nav__container {
-    width: 440px;
-    margin-left: auto;
-  }
-}
-
 @media (min-width: &desktop-width) {
-  display: flex;
-
   .main-nav__container {
     width: 478px;
     margin-left: auto;

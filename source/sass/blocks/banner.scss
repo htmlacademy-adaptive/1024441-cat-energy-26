@@ -10,7 +10,9 @@
 }
 
 .main-banner__container {
-  background-image: url("../img/background-main-bannerjpg.jpg");
+  background:  rgba(104, 183, 56, 0.85),
+    url("../img/background-main-bannerjpg.jpg");
+
   background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,6 +31,8 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .main-banner__button {
