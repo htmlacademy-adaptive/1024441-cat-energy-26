@@ -2,7 +2,7 @@
 @use "./blocks/header/main-header.scss";
 @use "./blocks/header/logo.scss";
 @use "./blocks/header/main-nav.scss";
-@use "./visually-hidden.scss";
+@use "./blocks/global.scss";
 @use "./blocks/fonts.scss";
 @use "./blocks/banner.scss";
 @use "./blocks/page.scss";
@@ -30,3 +30,4 @@
 @use "./blocks/form/radio-input.scss";
 @use "./blocks/additional-products.scss";
 @use "./blocks/variables.scss";
+@use "./blocks/viewports.scss";

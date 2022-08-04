@@ -14,16 +14,41 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/icone/burger.png");
+  background-repeat: no-repeat;
 }
 
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: $regular-background;
 }
 
 .main-nav__link {
   text-decoration: none;
-  padding: 20px 144px 24px 144px;
+  text-align: center;
+  width: 100%;
+  padding: 22px 70px 22px 70px;
   color: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  display: flex;
+
+  .main-nav__container {
+    width: 440px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: &desktop-width) {
+  display: flex;
+
+  .main-nav__container {
+    width: 478px;
+    margin-left: auto;
+  }
 }
