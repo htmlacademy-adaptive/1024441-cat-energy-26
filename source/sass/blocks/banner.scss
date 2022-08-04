@@ -1,19 +1,17 @@
 .banner {
-  background-color: #ffffff;
+  background-color: $regular-background;
   padding-top: 27px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #ffffff;
+  color: $regular-background;
   margin-bottom: 20px;
 }
 
 .main-banner__container {
   background:  rgba(104, 183, 56, 0.85),
     url("../img/background-main-bannerjpg.jpg");
-
-  background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
   background-size: contain;
 }

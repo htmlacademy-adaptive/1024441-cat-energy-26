@@ -4,7 +4,7 @@
 }
 
 .cooperation__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -14,7 +14,7 @@
 }
 
 .cooperation__address {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

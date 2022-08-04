@@ -1,7 +1,7 @@
 .product-example {
   padding: 25px 0 40px 0;
   background-color: #eaeaea;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
 }
 
 .product-example__title {
@@ -38,7 +38,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: $title-color;
 }
 
 .product-example__item-discription {
@@ -56,24 +56,14 @@
   margin: 0;
 }
 
-.range__range-before {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  background-color: transparent;
-  text-transform: uppercase;
-  text-align: center;
-  color: #000000;
-}
-
+.range__range-before,
 .range__range-became {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
-  color: #000000;
+  color: $title-color;
 }

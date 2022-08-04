@@ -11,7 +11,7 @@
 
 .service__item {
   padding: 24px 33px 18px 20px;
-  background-color: #f2f2f2;
+  background-color: $light-gray;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -19,7 +19,7 @@
 }
 
 .service__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -34,14 +34,14 @@
 
 .service__button {
   position: relative;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   padding: 4px 47px 4px 0;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: $title-color;
 
   &::before {
     position: absolute;
@@ -49,7 +49,7 @@
     left: 0;
     width: 240px;
     height: 1px;
-    background-color: #d9d9d9;
+    background-color: $border-color;
   }
 
   &::after {

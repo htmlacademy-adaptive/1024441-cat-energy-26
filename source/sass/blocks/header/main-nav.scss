@@ -1,20 +1,11 @@
 .main-nav {
   display: flex;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-
-    .main-nav__container {
-      width: 440px;
-      margin-left: auto;
-    }
-  }
 }
 
 .main-nav__toggle {

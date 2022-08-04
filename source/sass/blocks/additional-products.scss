@@ -1,5 +1,5 @@
 .additional-products {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $title-font;
   margin-bottom: 35px;
 }
 
@@ -12,6 +12,11 @@
 }
 
 .additional-products__list {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $regular-color;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -28,35 +33,15 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #222222;
-}
-
-.additional-products__size {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
-}
-
-.additional-products__price {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
+  color: $light-black;
 }
 
 .additional-products__button {
-<<<<<<< HEAD
-  font-family: "Oswald", "Arial", sans-serif;
-=======
-  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
->>>>>>> master
+  font-family: $title-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   padding: 10px 109px;
   background-color: #68b738;
-  color: #ffffff;
+  color: $regular-background;
 }

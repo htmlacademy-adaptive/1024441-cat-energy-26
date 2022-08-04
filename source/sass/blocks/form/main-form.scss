@@ -1,12 +1,11 @@
 .main-form {
-  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   padding: 0;
-  color: #000000;
+  color: $title-color;
 }
 
 .main-form__title {

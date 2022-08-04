@@ -21,12 +21,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $regular-color;
 }
 
 .questionnaire__field {
+  font-size: 16px;
+  line-height: 18px;
+
   &::placeholder {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $main-fon;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
