@@ -1,5 +1,5 @@
 .additional-products {
-  font-family: base.$title-font;
+  font-family: $title-font;
   margin-bottom: 35px;
 }
 
@@ -12,11 +12,11 @@
 }
 
 .additional-products__list {
-  font-family: base.$main-font;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: base.$regular-color;
+  color: $regular-color;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: base.$light-black;
+  color: $light-black;
 }
 
 .additional-products__button {
@@ -43,5 +43,5 @@
   line-height: 20px;
   padding: 10px 109px;
   background-color: #68b738;
-  color: base.$regular-background;
+  color: $regular-background;
 }

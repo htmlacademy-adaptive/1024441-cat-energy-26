@@ -7,16 +7,16 @@
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  font-family: base.$main-font;
+  font-family: $main-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $regular-color;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: base.$regular-background;
+  background-color: $regular-background;
 
-  @media (min-width: base.$mobile-width-only) {
+  @media (min-width: $mobile-width-only) {
     padding: 0 20px;
   }
 }
