@@ -13,10 +13,10 @@
 @import "./blocks/footer/footer";
 
 //index.html
-@import "./blocks/banner";
-@import "./blocks/features";
-@import "./blocks/product-example";
-@import "./blocks/service";
+@import "./blocks/index/banner";
+@import "./blocks/index/features";
+@import "./blocks/index/product-example";
+@import "./blocks/index/service";
 
 //form.html
 @import "./blocks/form/additional";
@@ -33,9 +33,9 @@
 @import "./blocks/form/field-comment";
 
 //catalog.html
-@import "./blocks/banner-gift";
-@import "./blocks/card";
-@import "./blocks/catalog";
-@import "./blocks/main-catalog";
-@import "./blocks/show-more";
-@import "./blocks/additional-products";
+@import "./blocks/catalog/banner-gift";
+@import "./blocks/catalog/card";
+@import "./blocks/catalog/catalog";
+@import "./blocks/catalog/main-catalog";
+@import "./blocks/catalog/show-more";
+@import "./blocks/catalog/additional-products";
