@@ -1,4 +1,5 @@
 // Начните писать стили здесь
+@use "./blocks/variables.scss";
 @use "./blocks/header/main-header.scss";
 @use "./blocks/header/logo.scss";
 @use "./blocks/header/main-nav.scss";
@@ -29,5 +30,4 @@
 @use "./blocks/form/questionnaire.scss";
 @use "./blocks/form/radio-input.scss";
 @use "./blocks/additional-products.scss";
-@use "./blocks/variables.scss";
 @use "./blocks/viewports.scss";
