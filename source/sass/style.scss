@@ -1,9 +1,10 @@
-@use "./blocks/variables";
+@forward "./blocks/variables";
+@forward "./blocks/viewports";
+@forward "./blocks/fonts";
 @use "./blocks/header/main-header";
 @use "./blocks/header/logo";
 @use "./blocks/header/main-nav";
 @use "./blocks/global";
-@use "./blocks/fonts";
 @use "./blocks/banner";
 @use "./blocks/page";
 @use "./blocks/features";
@@ -29,4 +30,3 @@
 @use "./blocks/form/questionnaire";
 @use "./blocks/form/radio-input";
 @use "./blocks/additional-products";
-@use "./blocks/viewports";
