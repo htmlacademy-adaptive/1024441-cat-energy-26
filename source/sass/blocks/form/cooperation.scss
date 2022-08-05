@@ -4,7 +4,7 @@
 }
 
 .cooperation__title {
-  font-family: $title-font;
+  font-family: base.$title-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -14,7 +14,7 @@
 }
 
 .cooperation__address {
-  font-family: $main-font;
+  font-family: base.$main-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

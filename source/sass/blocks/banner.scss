@@ -1,11 +1,11 @@
 .banner {
-  background-color: $regular-background;
+  background-color: base.$regular-background;
   padding-top: 27px;
-  font-family: $title-font;
+  font-family: base.$title-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: $regular-background;
+  color: base.$regular-background;
   margin-bottom: 20px;
 }
 

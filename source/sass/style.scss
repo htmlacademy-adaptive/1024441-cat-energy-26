@@ -1,21 +1,23 @@
-@forward "./blocks/variables";
-@forward "./blocks/viewports";
 @forward "./blocks/fonts";
+@forward "./blocks/viewports";
+@forward "./blocks/global";
+@forward "./blocks/variables";
+@use "./blocks/page";
+//header
 @use "./blocks/header/main-header";
 @use "./blocks/header/logo";
 @use "./blocks/header/main-nav";
-@use "./blocks/global";
+
+//footer
+@use "./blocks/footer/footer";
+
+//index.html
 @use "./blocks/banner";
-@use "./blocks/page";
 @use "./blocks/features";
-@use "./blocks/banner-gift";
-@use "./blocks/card";
-@use "./blocks/catalog";
-@use "./blocks/main-catalog";
 @use "./blocks/product-example";
 @use "./blocks/service";
-@use "./blocks/show-more";
-@use "./blocks/footer/footer";
+
+//form.html
 @use "./blocks/form/additional";
 @use "./blocks/form/checkbox-input";
 @use "./blocks/form/control";
@@ -29,4 +31,11 @@
 @use "./blocks/form/phone";
 @use "./blocks/form/questionnaire";
 @use "./blocks/form/radio-input";
+
+//catalog.html
+@use "./blocks/banner-gift";
+@use "./blocks/card";
+@use "./blocks/catalog";
+@use "./blocks/main-catalog";
+@use "./blocks/show-more";
 @use "./blocks/additional-products";

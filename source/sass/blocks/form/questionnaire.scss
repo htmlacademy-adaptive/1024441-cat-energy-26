@@ -21,7 +21,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: $regular-color;
+  color: base.$regular-color;
 }
 
 .questionnaire__field {
@@ -29,7 +29,7 @@
   line-height: 18px;
 
   &::placeholder {
-    font-family: $main-fon;
+    font-family: base.$main-fon;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

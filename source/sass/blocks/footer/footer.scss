@@ -23,7 +23,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $regular-color;
 
   &:hover + .copyright__icon {
     fill: #68b738;
