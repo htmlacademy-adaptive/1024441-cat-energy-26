@@ -22,6 +22,9 @@
   line-height: 20px;
   color: $regular-background;
   text-align: center;
+  background-color: #68b738;
+  text-transform: uppercase;
+  text-decoration: none;
 
   &:hover {
     background-color: #5eaa2f;
@@ -30,4 +33,18 @@
   &:active {
     opacity: 0.4;
   }
+}
+
+.card__description {
+  margin-bottom: 13px;
+}
+
+.card__table-item,
+.card__weight,
+.card__weight-value,
+.card__taste,
+.card__taste-value,
+.card__price,
+.card__price-value {
+  margin: 0;
 }

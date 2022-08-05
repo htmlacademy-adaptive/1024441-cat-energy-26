@@ -1,42 +1,39 @@
-@forward "./blocks/fonts";
-@forward "./blocks/viewports";
-@forward "./blocks/global";
-@forward "./blocks/variables";
-@use "./blocks/page";
+@import "./blocks/variables";
+@import "./blocks/fonts";
+@import "./blocks/global";
+@import "./blocks/page";
+@import "./blocks/viewports";
 
 //header
-@use "./blocks/header/main-header";
-@use "./blocks/header/logo";
-@use "./blocks/header/main-nav";
-
+@import "./blocks/header/main-header";
+@import "./blocks/header/logo";
+@import "./blocks/header/main-nav";
 //footer
-@use "./blocks/footer/footer";
+@import "./blocks/footer/footer";
 
 //index.html
-@use "./blocks/banner";
-@use "./blocks/features";
-@use "./blocks/product-example";
-@use "./blocks/service";
+@import "./blocks/banner";
+@import "./blocks/features";
+@import "./blocks/product-example";
+@import "./blocks/service";
 
 //form.html
-@use "./blocks/form/additional";
-@use "./blocks/form/checkbox-input";
-@use "./blocks/form/control";
-@use "./blocks/form/cooperation";
-@use "./blocks/form/criteria";
-@use "./blocks/form/email";
-@use "./blocks/form/field-group";
-@use "./blocks/form/field";
-@use "./blocks/form/form";
-@use "./blocks/form/main-form";
-@use "./blocks/form/phone";
-@use "./blocks/form/questionnaire";
-@use "./blocks/form/radio-input";
+@import "./blocks/form/additional";
+@import "./blocks/form/control";
+@import "./blocks/form/cooperation";
+@import "./blocks/form/criteria";
+@import "./blocks/form/email";
+@import "./blocks/form/field-group";
+@import "./blocks/form/form";
+@import "./blocks/form/main-form";
+@import "./blocks/form/phone";
+@import "./blocks/form/questionnaire";
+@import "./blocks/form/field";
 
 //catalog.html
-@use "./blocks/banner-gift";
-@use "./blocks/card";
-@use "./blocks/catalog";
-@use "./blocks/main-catalog";
-@use "./blocks/show-more";
-@use "./blocks/additional-products";
+@import "./blocks/banner-gift";
+@import "./blocks/card";
+@import "./blocks/catalog";
+@import "./blocks/main-catalog";
+@import "./blocks/show-more";
+@import "./blocks/additional-products";

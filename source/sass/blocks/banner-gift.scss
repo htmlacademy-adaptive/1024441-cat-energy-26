@@ -1,13 +1,17 @@
 .banner-gift {
   position: relative;
-  background-image: url("../img/background-main-bannerjpg.jpg");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/background-main-bannerjpg.jpg");
   background-repeat: no-repeat;
-  background-color: rgba(104, 183, 56, 0.85);
   padding-top: 187px;
   padding-right: 60px;
   padding-left: 60px;
 }
 
 .banner-gift__text {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
+  color: $regular-background;
 }
