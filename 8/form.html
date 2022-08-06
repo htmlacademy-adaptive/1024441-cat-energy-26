@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
   <base href="https://htmlacademy-adaptive.github.io/1024441-cat-energy-26/8/">
@@ -47,7 +48,7 @@
     <h1 class="main-form__title">Подбор программы</h1>
     <div class="main-form__container">
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="form__subtitle">Заполните анкету, и мы подберем
+        <p class="form__title">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
         <fieldset class="form__field-group questionnaire">
           <ul class="questionnaire__list">
@@ -59,7 +60,7 @@
               <label class="questionnaire__title" for="weight">Вес (кг):<sup>*</sup></label>
               <input class="questionnaire__field field" type="text" id="weight" name="weight" placeholder="7" required>
             </li>
-            <li class="questionnaire__item">
+            <li class="questionnaire__item questionnaire__item--last-one">
               <label class="questionnaire__title" for="age-old">Возраст (лет):</label>
               <input class="questionnaire__field field" type="text" id="age-old" name="age-old" placeholder="7">
             </li>
@@ -82,7 +83,7 @@
                 Набор массы
               </label>
             </li>
-            <li class="criteria__item">
+            <li class="criteria__item criteria__item--last-item">
               <label class="criteria__item-control control">
                 <input class="control__radio-input radio-input" name="purpose" value="don't-know" type="radio">
                 <span class="radio-input__control-mark"></span>
@@ -135,7 +136,7 @@
                 молоко
               </label>
             </li>
-            <li class="additional__item">
+            <li class="additional__item additional__item--last-item">
               <label class="additional__item__control control">
                 <input class="control__checkbox-input checkbox-input" type="checkbox" name="vitamins">
                 <span class="checkbox-input__control-mark"></span>
