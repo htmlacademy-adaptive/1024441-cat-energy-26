@@ -1,14 +1,9 @@
 @use "./blocks/variables" as*;
 
-.main-catalog {
-  font-family: $title-font;
-  color: $title-color;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 .main-catalog__title {
+  font-family: $oswald;
+  font-weight: inherit;
+  color: $black;
   margin: 0;
   margin-bottom: 41px;
   font-size: 36px;

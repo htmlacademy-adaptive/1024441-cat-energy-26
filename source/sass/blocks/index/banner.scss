@@ -1,13 +1,9 @@
 @use "./blocks/variables" as*;
 
 .banner {
-  background-color: $regular-background;
+  background-color: $white;
   padding-top: 27px;
-  font-family: $title-font;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  color: $regular-background;
+  color: $white;
   margin-bottom: 20px;
 }
 
@@ -19,6 +15,7 @@
 }
 
 .main-banner__title {
+  font-family: $oswald;
   font-style: normal;
   font-size: 36px;
   line-height: 36px;
@@ -43,11 +40,11 @@
   text-transform: uppercase;
   line-height: 18px;
   padding: 7px 44px;
-  background-color: #68b738;
+  background-color: $regular-button;
   cursor: pointer;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $regular-button--hover;
   }
 
   &:active {

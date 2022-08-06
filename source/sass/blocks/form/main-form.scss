@@ -1,18 +1,13 @@
 @use "./blocks/variables" as*;
 
 .main-form {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
   padding: 27px 20px 0 20px;
-  color: $title-color;
-  border-top: 1px solid $border-color;
 }
 
 .main-form__title {
-  font-family: $title-font;
+  font-family: $oswald;
+  color: $black;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   margin: 0;

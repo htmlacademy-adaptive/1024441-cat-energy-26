@@ -5,10 +5,8 @@
   border: solid 1px $border-color;
 
   &::placeholder {
-    font-family: $title-font;
+    font-family: $oswald;
     font-size: 16px;
-    line-height: 18px;
-    color: $regular-color;
     text-align: left;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 .questionnaire__list {
-  font-family: $title-font;
+  font-family: $oswald;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -20,22 +20,15 @@
 }
 
 .questionnaire__title {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
-  color: $regular-color;
 }
 
 .questionnaire__field {
   font-size: 16px;
-  line-height: 18px;
 
   &::placeholder {
-    font-family: $main-font;
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 18px;
     text-transform: uppercase;
   }
 }

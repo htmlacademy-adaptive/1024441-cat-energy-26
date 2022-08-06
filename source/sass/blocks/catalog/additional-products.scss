@@ -1,13 +1,13 @@
 @use "./blocks/variables" as*;
 
 .additional-products {
-  font-family: $title-font;
   margin-bottom: 35px;
 }
 
 .additional-products__title {
-  font-family: $title-font;
-  font-weight: 400;
+  font-family: $oswald;
+  color: $black;
+  font-weight: inherit;
   font-size: 24px;
   line-height: 24px;
   margin: 0;
@@ -15,9 +15,6 @@
 }
 
 .additional-products__list {
-  font-family: $main-font;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 14px;
   color: $regular-color;
   list-style: none;
@@ -31,6 +28,7 @@
 }
 
 .additional-products__name {
+  font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -47,17 +45,24 @@
 .additional-products__item {
   padding-top: 12px;
   padding-bottom: 19px;
-  border-top: 1px solid #cdcdcd;
 }
 
 .additional-products__button {
-  font-family: $title-font;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   padding: 10px 109px;
-  background-color: #68b738;
-  color: $regular-background;
+  background-color: $regular-button;
+  color: $white;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $regular-button--hover;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }

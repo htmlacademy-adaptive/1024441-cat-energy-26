@@ -1,10 +1,11 @@
 @use "./blocks/variables" as*;
 
 .field-comment {
+  padding: 10px 12px;
+
   &::placeholder {
-    font-family: $title-font;
+    font-family: $oswald;
     font-size: 16px;
-    line-height: 18px;
     text-transform: uppercase;
   }
 }

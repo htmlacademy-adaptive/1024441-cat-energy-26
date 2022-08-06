@@ -17,11 +17,12 @@
 @use "./blocks/index/features";
 @use "./blocks/index/product-example";
 @use "./blocks/index/service";
+@use "./blocks/cooperation";
 
 //form.html
 @use "./blocks/form/additional";
 @use "./blocks/form/control";
-@use "./blocks/form/cooperation";
+
 @use "./blocks/form/criteria";
 @use "./blocks/form/email";
 @use "./blocks/form/field-group";

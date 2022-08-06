@@ -3,12 +3,12 @@
 
 .main-nav {
   display: flex;
-  font-family: $title-font;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  color: $title-color;
+  color: $black;
 }
 
 .main-nav__toggle {
@@ -27,7 +27,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: $regular-background;
+  background-color: $white;
 }
 
 .main-nav__link {
