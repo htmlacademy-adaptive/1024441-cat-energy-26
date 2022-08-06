@@ -1,3 +1,5 @@
+@use "./blocks/variables" as*;
+
 .main-catalog {
   font-family: $title-font;
   color: $title-color;

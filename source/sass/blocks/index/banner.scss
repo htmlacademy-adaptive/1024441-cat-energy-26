@@ -1,3 +1,5 @@
+@use "./blocks/variables" as*;
+
 .banner {
   background-color: $regular-background;
   padding-top: 27px;

@@ -1,41 +1,41 @@
-@import "./blocks/variables";
-@import "./blocks/fonts";
-@import "./blocks/global";
-@import "./blocks/page";
-@import "./blocks/viewports";
+@use "./blocks/variables";
+@use "./blocks/fonts";
+@use "./blocks/global";
+@use "./blocks/page" ;
+@use "./blocks/viewports";
 
 //header
-@import "./blocks/header/main-header";
-@import "./blocks/header/logo";
-@import "./blocks/header/main-nav";
+@use "./blocks/header/main-header";
+@use "./blocks/header/logo";
+@use "./blocks/header/main-nav";
 
 //footer
-@import "./blocks/footer/footer";
+@use "./blocks/footer/footer";
 
 //index.html
-@import "./blocks/index/banner";
-@import "./blocks/index/features";
-@import "./blocks/index/product-example";
-@import "./blocks/index/service";
+@use "./blocks/index/banner";
+@use "./blocks/index/features";
+@use "./blocks/index/product-example";
+@use "./blocks/index/service";
 
 //form.html
-@import "./blocks/form/additional";
-@import "./blocks/form/control";
-@import "./blocks/form/cooperation";
-@import "./blocks/form/criteria";
-@import "./blocks/form/email";
-@import "./blocks/form/field-group";
-@import "./blocks/form/form";
-@import "./blocks/form/main-form";
-@import "./blocks/form/phone";
-@import "./blocks/form/questionnaire";
-@import "./blocks/form/field";
-@import "./blocks/form/field-comment";
+@use "./blocks/form/additional";
+@use "./blocks/form/control";
+@use "./blocks/form/cooperation";
+@use "./blocks/form/criteria";
+@use "./blocks/form/email";
+@use "./blocks/form/field-group";
+@use "./blocks/form/form";
+@use "./blocks/form/main-form";
+@use "./blocks/form/phone";
+@use "./blocks/form/questionnaire";
+@use "./blocks/form/field";
+@use "./blocks/form/field-comment";
 
 //catalog.html
-@import "./blocks/catalog/banner-gift";
-@import "./blocks/catalog/card";
-@import "./blocks/catalog/catalog";
-@import "./blocks/catalog/main-catalog";
-@import "./blocks/catalog/show-more";
-@import "./blocks/catalog/additional-products";
+@use "./blocks/catalog/banner-gift";
+@use "./blocks/catalog/card";
+@use "./blocks/catalog/catalog";
+@use "./blocks/catalog/main-catalog";
+@use "./blocks/catalog/show-more";
+@use "./blocks/catalog/additional-products";

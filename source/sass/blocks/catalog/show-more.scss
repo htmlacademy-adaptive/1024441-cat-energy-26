@@ -1,3 +1,5 @@
+@use "./blocks/variables" as*;
+
 .show-more {
   padding-bottom: 24px;
   border-top: 1px solid $lightx2-gray;

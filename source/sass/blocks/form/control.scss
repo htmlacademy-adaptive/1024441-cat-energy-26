@@ -1,3 +1,5 @@
+@use "./blocks/variables" as*;
+
 .control {
   font-family: $title-font;
   font-weight: 400;

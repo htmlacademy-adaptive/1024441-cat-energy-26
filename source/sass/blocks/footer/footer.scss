@@ -1,3 +1,5 @@
+@use "./blocks/variables" as*;
+
 .main-footer {
   background-color: $light-gray;
 }
