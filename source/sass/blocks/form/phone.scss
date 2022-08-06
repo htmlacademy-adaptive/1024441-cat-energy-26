@@ -1,0 +1,13 @@
+@use "./blocks/variables" as*;
+
+.phone__field {
+  font-size: 16px;
+  line-height: 18px;
+
+  &::placeholder {
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}

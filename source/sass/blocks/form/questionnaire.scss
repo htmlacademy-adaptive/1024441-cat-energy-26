@@ -1,0 +1,41 @@
+@use "./blocks/variables" as*;
+
+.questionnaire {
+  margin-bottom: 24px;
+}
+
+.questionnaire__list {
+  font-family: $title-font;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.questionnaire__item {
+  margin-bottom: 14px;
+
+  &--last-one {
+    margin-bottom: 0;
+  }
+}
+
+.questionnaire__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $regular-color;
+}
+
+.questionnaire__field {
+  font-size: 16px;
+  line-height: 18px;
+
+  &::placeholder {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,21 @@
+@use "./blocks/variables" as*;
+
+.criteria {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 24px 0;
+}
+
+.criteria__list {
+  padding: 20px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.criteria__item {
+  margin-bottom: 13px;
+}
+
+.criteria__item--last-item {
+  margin-bottom: 0;
+}

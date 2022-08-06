@@ -1,0 +1,46 @@
+@use "./blocks/variables" as*;
+@use "./blocks/viewports" as*;
+
+.main-nav {
+  display: flex;
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: $title-color;
+}
+
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/icone/burger.png");
+  background-repeat: no-repeat;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $regular-background;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 22px 70px 22px 70px;
+  color: inherit;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__container {
+    width: 478px;
+    margin-left: auto;
+  }
+}

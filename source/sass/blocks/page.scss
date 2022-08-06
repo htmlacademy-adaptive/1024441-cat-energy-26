@@ -1,0 +1,19 @@
+@use "./blocks/variables" as*;
+@use "./blocks/fonts" as*;
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $regular-color;
+  background-color: $regular-background;
+  margin: 0;
+}

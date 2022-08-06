@@ -1,0 +1,29 @@
+@use "./blocks/variables" as*;
+
+.features {
+  margin-bottom: 50px;
+}
+
+.features__title {
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $title-color;
+  margin: 0;
+}
+
+.features__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+}
+
+.features__text {
+  margin: 0;
+  padding-left: 80px;
+}

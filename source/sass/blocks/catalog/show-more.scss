@@ -1,0 +1,40 @@
+@use "./blocks/variables" as*;
+
+.show-more {
+  padding-bottom: 24px;
+  border-top: 1px solid $lightx2-gray;
+  border-bottom: 1px solid $lightx2-gray;
+  background-image: url("../img/icone/plus.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.show-more__wrapper {
+  padding-top: 78px;
+}
+
+.show-more__card-description {
+  margin: 0;
+}
+
+.show-more__title {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.show-more__text {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.show-more__button {
+  background-color: $light-gray;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $regular-color;
+  padding: 10px 94px;
+}

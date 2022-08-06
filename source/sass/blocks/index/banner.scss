@@ -1,0 +1,56 @@
+@use "./blocks/variables" as*;
+
+.banner {
+  background-color: $regular-background;
+  padding-top: 27px;
+  font-family: $title-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $regular-background;
+  margin-bottom: 20px;
+}
+
+.main-banner__container {
+  background:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/background-main-bannerjpg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-banner__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.main-banner__subtitle {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main-banner__button {
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 18px;
+  padding: 7px 44px;
+  background-color: #68b738;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
