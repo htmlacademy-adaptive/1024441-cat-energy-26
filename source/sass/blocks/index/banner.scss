@@ -67,3 +67,45 @@
     opacity: 0.4;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .banner {
+    padding: 0 30px;
+    padding-bottom: 526px;
+    align-items: flex-start;
+  }
+
+  .main-banner__container {
+    background: $white;
+    padding: 0;
+    padding-left: 117px;
+    margin-bottom: 0;
+  }
+
+  .main-banner__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    text-align: left;
+    width: 416px;
+    margin-bottom: 41px;
+  }
+
+  .main-banner__subtitle {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .main-banner__button {
+    align-self: auto;
+    margin-left: 117px;
+  }
+
+  .main-banner__image-wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

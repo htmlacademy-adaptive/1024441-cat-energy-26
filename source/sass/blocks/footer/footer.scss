@@ -53,3 +53,21 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding: 58px 30px 55px 30px;
+  }
+
+  .main-footer__container {
+    flex-direction: row;
+  }
+
+  .main-footer__logo {
+    padding: 0;
+  }
+
+  .main-footer__social {
+    border: none;
+  }
+}

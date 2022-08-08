@@ -16,8 +16,6 @@
 }
 
 .features__list {
-  display: flex;
-  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -25,7 +23,6 @@
 
 .features__item {
   margin-bottom: 20px;
-  position: relative;
 }
 
 .features__item--last-item {
@@ -33,6 +30,109 @@
 }
 
 .features__text {
+  position: relative;
   margin: 0;
   padding-left: 80px;
+  width: 199px;
+
+  &--leaf::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icone/leaf.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--worm-water::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icone/worm-water.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--knife::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icone/knife.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--alarm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icone/alarm.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    position: relative;
+    padding: 0 30px;
+    padding-bottom: 47px;
+    margin-bottom: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -30px;
+      bottom: 30px;
+      height: 1px;
+      width: 110%;
+      background-color: $nav-gray;
+    }
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 137px;
+  }
+
+  .features__text {
+    padding: 0;
+    width: 245px;
+    padding-top: 151px;
+
+    &--leaf::before {
+      top: 40px;
+    }
+
+    &--worm-water::before {
+      top: 40px;
+    }
+
+    &--knife::before {
+      top: 40px;
+    }
+
+    &--alarm::before {
+      top: 40px;
+    }
+  }
 }

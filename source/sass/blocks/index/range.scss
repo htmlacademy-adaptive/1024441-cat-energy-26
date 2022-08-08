@@ -1,3 +1,5 @@
+@use "./blocks/variables" as*;
+
 .range {
   display: flex;
   justify-content: space-between;
@@ -6,4 +8,11 @@
 .range__range-before,
 .range__range-became {
   border: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .range {
+    padding: 0 60px;
+  }
 }

@@ -14,3 +14,20 @@
   margin-bottom: 37px;
   padding: 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    padding: 0;
+  }
+
+  .main-form__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    padding: 0 30px;
+  }
+
+  .main-form__wrapper {
+    margin-bottom: 71px;
+  }
+}

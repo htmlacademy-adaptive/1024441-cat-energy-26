@@ -1,0 +1,9 @@
+@use "./blocks/variables" as*;
+
+@media (min-width: $tablet-width) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}

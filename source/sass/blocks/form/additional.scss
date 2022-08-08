@@ -1,3 +1,5 @@
+@use "./blocks/variables" as*;
+
 .additional {
   border: none;
 }
@@ -14,4 +16,16 @@
 
 .additional__item--last-item {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .additional__list {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    gap: 32px 123px;
+  }
+
+  .additional__wrapper {
+    display: flex;
+  }
 }

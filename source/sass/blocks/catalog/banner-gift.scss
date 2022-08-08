@@ -16,3 +16,14 @@
   margin: 0;
   color: $white;
 }
+
+@media (min-width: $tablet-width) {
+  .banner-gift__text {
+    text-align: left;
+    width: 161px;
+  }
+
+  .banner-gift {
+    padding: 71px 124px 69px 453px;
+  }
+}

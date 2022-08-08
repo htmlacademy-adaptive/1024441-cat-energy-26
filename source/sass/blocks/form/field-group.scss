@@ -28,3 +28,15 @@
 .field-group__phone {
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .field-group__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .field-group {
+    margin-bottom: 65px;
+  }
+}

@@ -16,6 +16,9 @@
 }
 
 .show-more__title {
+  font-family: $oswald;
+  font-weight: inherit;
+  text-transform: uppercase;
   color: $black;
   font-size: 16px;
   text-align: center;
@@ -47,5 +50,41 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    padding: 0 36px;
+    padding-bottom: 38px;
+    border: solid 2px $light-gray;
+  }
+
+  .show-more__wrapper {
+    padding-top: 161px;
+  }
+
+  .show-more__card-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show-more__title {
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+    align-self: center;
+  }
+
+  .show-more__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .show-more__button {
+    text-align: center;
+    padding: 20px 79px;
+    line-height: 0;
   }
 }

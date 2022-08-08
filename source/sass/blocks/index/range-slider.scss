@@ -1,3 +1,16 @@
+@use "./blocks/variables" as*;
+
 .range-slider__slide {
   margin-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .range-slider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .range-slider__slide {
+    align-self: center;
+  }
 }

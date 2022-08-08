@@ -28,3 +28,12 @@
 .field__age-old {
   padding: 13px 0 13px 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .field__name,
+  .field__weight,
+  .field__age-old {
+    padding: 10px 0 10px 18px;
+    flex-grow: 1;
+  }
+}

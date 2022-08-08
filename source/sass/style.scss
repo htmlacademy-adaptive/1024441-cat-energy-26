@@ -2,7 +2,6 @@
 @use "./blocks/fonts";
 @use "./blocks/global";
 @use "./blocks/page" ;
-@use "./blocks/viewports";
 
 //header
 @use "./blocks/header/main-header";
@@ -14,7 +13,6 @@
 @use "./blocks/footer/copyright";
 
 //index.html
-@use "./blocks/index/main-container";
 @use "./blocks/index/banner";
 @use "./blocks/index/features";
 @use "./blocks/index/product-example";
@@ -38,6 +36,7 @@
 
 //catalog.html
 @use "./blocks/catalog/banner-gift";
+@use "./blocks/catalog/cards";
 @use "./blocks/catalog/card";
 @use "./blocks/catalog/catalog";
 @use "./blocks/catalog/main-catalog";

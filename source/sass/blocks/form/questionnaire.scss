@@ -31,8 +31,27 @@
   font-size: 16px;
 
   &::placeholder {
-    font-style: normal;
     font-size: 16px;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .questionnaire__title {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 10px;
+  }
+
+  .questionnaire__field {
+    font-size: 20px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+  }
+
+  .questionnaire__item {
+    margin-bottom: 20px;
   }
 }

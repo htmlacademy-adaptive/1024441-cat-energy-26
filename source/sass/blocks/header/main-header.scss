@@ -1,6 +1,21 @@
+@use "./blocks/variables" as*;
+
 .main-header {
   display: flex;
   align-items: center;
   padding: 24px 20px;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &--index-margin {
+      margin-bottom: 62px;
+    }
+
+    &--form-margin {
+      margin-bottom: 65px;
+    }
+  }
 }

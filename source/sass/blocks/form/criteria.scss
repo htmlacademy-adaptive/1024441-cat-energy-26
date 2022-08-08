@@ -12,26 +12,6 @@
   padding: 20px 0;
   margin: 0;
   list-style: none;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: -20px;
-    width: 320px;
-    height: 1px;
-    background-color: $border-color;
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: -20px;
-    width: 320px;
-    height: 1px;
-    background-color: $border-color;
-  }
 }
 
 .criteria__item {
@@ -40,4 +20,11 @@
 
 .criteria__item--last-item {
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .criteria__list {
+    padding: 25px 27px;
+    border: 1px solid $border-color;
+  }
 }
