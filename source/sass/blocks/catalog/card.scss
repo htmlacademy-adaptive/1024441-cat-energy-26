@@ -1,15 +1,27 @@
 @use "./blocks/variables" as*;
 
+.card {
+  margin-bottom: 11px;
+}
+
+.card__wrapper {
+  display: flex;
+}
+
 .card__title {
   font-family: $oswald;
   font-weight: inherit;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 20px;
   color: $black;
+  margin: 0;
   margin-bottom: 18px;
+  width: 76px;
 }
 
 .card__table {
+  display: flex;
+  flex-direction: column;
   font-size: 12px;
   line-height: 16px;
   color: $regular-color;
@@ -38,7 +50,18 @@
 }
 
 .card__description {
+  width: 100%;
   margin-bottom: 13px;
+}
+
+.card__table-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+
+  &--last-item {
+    margin: 0;
+  }
 }
 
 .card__table-item,

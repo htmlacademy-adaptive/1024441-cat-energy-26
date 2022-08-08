@@ -1,6 +1,7 @@
 @use "./blocks/variables" as*;
 
 .additional-products {
+  padding: 0 20px;
   margin-bottom: 35px;
 }
 
@@ -24,7 +25,9 @@
 }
 
 .additional-products__wrapper {
-  margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .additional-products__name {
@@ -43,6 +46,8 @@
 }
 
 .additional-products__item {
+  display: flex;
+  flex-direction: column;
   padding-top: 12px;
   padding-bottom: 19px;
 }

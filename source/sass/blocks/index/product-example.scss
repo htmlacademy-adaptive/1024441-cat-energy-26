@@ -1,11 +1,13 @@
 @use "./blocks/variables" as*;
 
 .product-example {
-  padding: 25px 0 40px 0;
+  padding: 25px 20px 40px 20px;
   background-color: $darken-gray;
 }
 
 .product-example__title {
+  font-family: $oswald;
+  font-weight: inherit;
   margin: 0;
   margin-bottom: 40px;
   font-size: 36px;
@@ -23,6 +25,7 @@
 }
 
 .product-example__list {
+  display: flex;
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
@@ -30,7 +33,7 @@
 
 .product-example__list-item {
   position: relative;
-  padding: 14px 42px 18px 42px;
+  padding: 14px 20px 0 20px;
 }
 
 .product-example__item-value {
@@ -38,12 +41,15 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .product-example__item-discription {
   margin: 0;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 14px;
+  text-align: center;
 }
 
 .product-example__subtitle {
@@ -53,6 +59,7 @@
   text-transform: uppercase;
   margin: 0;
   color: $black;
+  text-align: center;
 }
 
 .range__range-before,

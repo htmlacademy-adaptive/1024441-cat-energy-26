@@ -1,7 +1,7 @@
 @use "./blocks/variables" as*;
 
 .main-form {
-  padding: 27px 20px 0 20px;
+  padding-top: 27px;
 }
 
 .main-form__title {
@@ -12,4 +12,5 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 37px;
+  padding: 0 20px;
 }

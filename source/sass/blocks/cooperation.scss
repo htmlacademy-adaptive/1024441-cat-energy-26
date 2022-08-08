@@ -1,7 +1,15 @@
 @use "./blocks/variables" as*;
 
+.cooperation {
+  &--them-gray {
+    background-color: $light-gray;
+  }
+}
+
 .cooperation__container {
-  margin-bottom: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 20px;
 }
 
 .cooperation__title {
@@ -17,3 +25,4 @@
   font-size: 14px;
   line-height: 20px;
 }
+

@@ -12,6 +12,9 @@
 
 .field-group__email,
 .field-group__phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: $oswald;
   font-size: 16px;
   text-transform: uppercase;

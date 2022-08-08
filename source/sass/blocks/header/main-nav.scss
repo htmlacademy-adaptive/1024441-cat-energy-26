@@ -3,6 +3,7 @@
 
 .main-nav {
   display: flex;
+  position: relative;
   font-family: $oswald;
   font-style: normal;
   font-weight: 500;
@@ -18,29 +19,38 @@
   padding: 0;
   cursor: pointer;
   width: 24px;
-  height: 16px;
+  height: 18px;
   background-image: url("../img/icone/burger.png");
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .main-nav__list {
+  display: none;
+}
+
+.main-nav__list--open {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  position: absolute;
+  top: 44px;
+  right: -20px;
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: $white;
 }
 
-.main-nav__link {
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  padding: 22px 70px 22px 70px;
-  color: inherit;
+.main-nav__item {
+  border-top: 1px solid $nav-gray;
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__container {
-    width: 478px;
-    margin-left: auto;
-  }
+.main-nav__link {
+  display: block;
+  padding: 21px 70px 24px 70px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
 }

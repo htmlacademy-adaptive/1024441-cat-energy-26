@@ -11,18 +11,21 @@
 
 //footer
 @use "./blocks/footer/footer";
+@use "./blocks/footer/copyright";
 
 //index.html
+@use "./blocks/index/main-container";
 @use "./blocks/index/banner";
 @use "./blocks/index/features";
 @use "./blocks/index/product-example";
+@use "./blocks/index/range-slider";
+@use "./blocks/index/range";
 @use "./blocks/index/service";
 @use "./blocks/cooperation";
 
 //form.html
 @use "./blocks/form/additional";
 @use "./blocks/form/control";
-
 @use "./blocks/form/criteria";
 @use "./blocks/form/email";
 @use "./blocks/form/field-group";

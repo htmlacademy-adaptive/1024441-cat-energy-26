@@ -2,6 +2,8 @@
 
 .phone__field {
   font-size: 16px;
+  width: 204px;
+  padding: 14px 55px 14px 15px;
 
   &::placeholder {
     font-family: $oswald;
