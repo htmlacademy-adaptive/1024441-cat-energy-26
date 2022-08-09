@@ -47,6 +47,7 @@
 
 .additional-products__item {
   display: flex;
+  position: relative;
   flex-direction: column;
   padding-top: 12px;
   padding-bottom: 19px;
@@ -117,5 +118,45 @@
 
   .additional-products__size {
     margin-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__title {
+    margin-bottom: 81px;
+  }
+
+  .additional-products__wrapper {
+    display: flex;
+  }
+
+  .additional-products__list {
+    width: 100%;
+  }
+
+  .additional-products__item {
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $card-gray;
+    }
+  }
+
+  .additional-products__name {
+    margin: 0;
+  }
+
+  .additional-products__size {
+    margin-right: 112px;
+  }
+
+  .additional-products__button {
+    width: auto;
   }
 }

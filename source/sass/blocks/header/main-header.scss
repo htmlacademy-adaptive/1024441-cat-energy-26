@@ -18,4 +18,14 @@
       margin-bottom: 65px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    &--index-margin {
+      margin-bottom: 74px;
+    }
+  }
 }

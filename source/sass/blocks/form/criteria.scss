@@ -28,3 +28,9 @@
     border: 1px solid $border-color;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .criteria__list {
+    padding: 29px 27px;
+  }
+}

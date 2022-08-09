@@ -29,3 +29,12 @@
     display: flex;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .additional__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 105px;
+  }
+}

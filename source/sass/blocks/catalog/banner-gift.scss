@@ -27,3 +27,11 @@
     padding: 71px 124px 69px 453px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .banner-gift {
+    width: 245px;
+    padding: 0;
+  }
+}

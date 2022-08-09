@@ -127,3 +127,23 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .card__link {
+    padding: 10px 53px;
+  }
+
+  .card__title {
+    width: 145px;
+    line-height: 21px;
+    margin-bottom: 21px;
+  }
+
+  .card__image-wrapper {
+    margin-bottom: 46px;
+  }
+
+  .card__table-item {
+    margin-bottom: 15px;
+  }
+}

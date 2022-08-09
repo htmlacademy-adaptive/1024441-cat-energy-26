@@ -79,3 +79,20 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 0 110px;
+    padding-bottom: 82px;
+  }
+
+  .main-form__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+  }
+
+  .form__button {
+    width: 568px;
+  }
+}

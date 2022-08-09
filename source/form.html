@@ -98,16 +98,18 @@
         </div>
         <fieldset class="form__field-group field-group">
           <legend class="field-group__title">Контактные данные (владельца кота)</legend>
-          <p class="field-group__email email">
-            <label class="email__title" for="email">E-mail:<sup>*</sup></label>
-            <input class="email__field field" id="email" name="email" type="email" placeholder="kuklachev@gmail.com"
-              required>
-          </p>
-          <p class="field-group__phone phone">
-            <label class="phone__title" for="phone">Телефон:<sup>*</sup></label>
-            <input class="phone__field field" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90"
-              required>
-          </p>
+          <div class="field-group__email-phone-wrapper">
+            <p class="field-group__email email">
+              <label class="email__title" for="email">E-mail:<sup>*</sup></label>
+              <input class="email__field field" id="email" name="email" type="email" placeholder="kuklachev@gmail.com"
+                required>
+            </p>
+            <p class="field-group__phone phone">
+              <label class="phone__title" for="phone">Телефон:<sup>*</sup></label>
+              <input class="phone__field field" id="phone" name="phone" type="tel" placeholder="8 (960) 900-60-90"
+                required>
+            </p>
+          </div>
         </fieldset>
         <fieldset class="form__field-group field-group">
           <legend class="field-group__title">Комментарий</legend>

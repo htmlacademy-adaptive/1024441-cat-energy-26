@@ -40,3 +40,12 @@
     margin-bottom: 65px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field-group__email-phone-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 78px;
+    align-items: center;
+  }
+}

@@ -88,3 +88,9 @@
     line-height: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .show-more__button {
+    padding: 20px 39px;
+  }
+}

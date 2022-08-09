@@ -110,3 +110,32 @@
     line-height: 37px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-example {
+    padding: 0 110px 75px 110px;
+  }
+
+  .product-example__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-example__title {
+    margin-bottom: 146px;
+  }
+
+  .product-example__discription-text {
+    width: 436px;
+    margin-bottom: 69px;
+  }
+
+  .product-example__discription {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-example__list {
+    margin-bottom: 55px;
+  }
+}

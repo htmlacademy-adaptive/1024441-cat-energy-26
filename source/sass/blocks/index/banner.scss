@@ -109,3 +109,22 @@
     transform: translateX(-50%);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .banner {
+    padding: 0 110px;
+    padding-bottom: 185px;
+  }
+
+  .main-banner__button {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  }
+
+  .main-banner__image-wrapper {
+    top: 10%;
+    left: 55%;
+    transform: translateX(-50%);
+  }
+}

@@ -18,14 +18,20 @@
   padding-bottom: 14px;
 }
 
-@media (min-height: $tablet-width) {
+@media (min-width: $tablet-width) {
   .catalog__list {
     padding: 0 30px;
     margin-bottom: 68px;
   }
 
   .catalog__item {
-    padding: 0 30px;
+    padding: 0 38px;
     padding-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    padding-bottom: 40px;
   }
 }

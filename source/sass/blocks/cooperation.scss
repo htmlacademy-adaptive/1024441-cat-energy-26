@@ -42,3 +42,15 @@
     width: 160px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    position: relative;
+  }
+
+  .cooperation__container {
+    position: absolute;
+    width: 565px;
+    background-color: $white;
+  }
+}

@@ -139,3 +139,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .service {
+    padding: 0 110px;
+  }
+
+  .service__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+  }
+}
