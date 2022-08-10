@@ -5,10 +5,7 @@
   background-image: url("../img/icone/plus.png");
   background-repeat: no-repeat;
   background-position: center 30px;
-}
-
-.show-more__wrapper {
-  padding-top: 78px;
+  min-height: 158px;
 }
 
 .show-more__card-description {
@@ -43,6 +40,7 @@
   text-decoration: none;
   color: $regular-color;
   padding: 10px 94px;
+  text-align: center;
 
   &:hover {
     background-color: $lightx2-gray;
@@ -58,10 +56,6 @@
     padding: 0 36px;
     padding-bottom: 38px;
     border: solid 2px $light-gray;
-  }
-
-  .show-more__wrapper {
-    padding-top: 161px;
   }
 
   .show-more__card-description {

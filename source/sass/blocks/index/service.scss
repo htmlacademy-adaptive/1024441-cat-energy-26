@@ -3,7 +3,6 @@
 .service {
   margin: 0;
   margin-bottom: 20px;
-  padding: 0 20px;
 }
 
 .service__list {
@@ -13,11 +12,11 @@
 }
 
 .service__item {
-  padding: 30px 20px 18px 20px;
+  padding: 24px 0 18px 20px;
   background-color: $light-gray;
   margin-bottom: 20px;
 
-  &--last-one {
+  &:last-child {
     margin: 0;
   }
 }
@@ -106,7 +105,6 @@
 
 @media (min-width: $tablet-width) {
   .service {
-    padding: 0 30px;
     margin-bottom: 45px;
   }
 
@@ -141,13 +139,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .service {
-    padding: 0 110px;
-  }
-
   .service__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 80px;
+  }
+
+  .service__item {
+    margin: 0;
   }
 }

@@ -2,6 +2,7 @@
 
 .additional {
   border: none;
+  margin-bottom: 34px;
 }
 
 .additional__list {
@@ -19,6 +20,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .additional {
+    margin: 0;
+  }
+
   .additional__list {
     display: grid;
     grid-template-columns: 1fr 1fr;

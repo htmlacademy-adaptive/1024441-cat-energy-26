@@ -8,6 +8,7 @@
   text-transform: none;
   padding: 0;
   color: $black;
+  max-width: 187px;
 }
 
 .field-group__email,
@@ -34,6 +35,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    max-width: 514px;
   }
 
   .field-group {
@@ -47,5 +49,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 78px;
     align-items: center;
+  }
+
+  .field-group__email {
+    margin: 0;
   }
 }

@@ -11,7 +11,7 @@
 @media (min-width: $desktop-width) {
   .cards {
     display: grid;
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 62px 80px;
   }
 }

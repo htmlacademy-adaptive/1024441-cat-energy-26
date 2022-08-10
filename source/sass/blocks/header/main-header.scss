@@ -2,14 +2,12 @@
 
 .main-header {
   display: flex;
+  position: relative;
   align-items: center;
-  padding: 24px 20px;
+  padding: 24px 0;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
-
     &--index-margin {
       margin-bottom: 62px;
     }
@@ -21,8 +19,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
-    padding-left: 110px;
-    padding-right: 110px;
 
     &--index-margin {
       margin-bottom: 74px;

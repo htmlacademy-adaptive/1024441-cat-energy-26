@@ -7,7 +7,7 @@
 .catalog__list {
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .catalog__item {
@@ -20,13 +20,13 @@
 
 @media (min-width: $tablet-width) {
   .catalog__list {
-    padding: 0 30px;
     margin-bottom: 68px;
   }
 
   .catalog__item {
     padding: 0 38px;
-    padding-bottom: 38px;
+    justify-content: flex-end;
+    padding-bottom: 39px;
   }
 }
 

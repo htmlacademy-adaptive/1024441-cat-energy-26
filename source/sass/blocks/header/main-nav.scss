@@ -2,7 +2,6 @@
 
 .main-nav {
   display: flex;
-  position: relative;
   font-family: $oswald;
   font-style: normal;
   font-weight: 500;
@@ -33,10 +32,11 @@
   &--open {
     display: flex;
     min-width: 320px;
+    width: 115%;
     flex-direction: column;
     position: absolute;
-    top: 44px;
-    right: 44%;
+    top: 70px;
+    right: calc(-20px);
     background-color: $white;
     z-index: 1;
   }

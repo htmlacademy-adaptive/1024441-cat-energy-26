@@ -12,7 +12,10 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 37px;
-  padding: 0 20px;
+}
+
+.main-form__wrapper {
+  margin-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,7 +27,6 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
-    padding: 0 30px;
   }
 
   .main-form__wrapper {
@@ -35,7 +37,6 @@
 @media (min-width: $desktop-width) {
   .main-form__title {
     margin-bottom: 56px;
-    padding: 0 110px;
   }
 
   .main-form__wrapper {

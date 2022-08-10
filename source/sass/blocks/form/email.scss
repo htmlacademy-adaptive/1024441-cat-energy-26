@@ -1,8 +1,7 @@
 @use "./blocks/variables" as*;
 
 .email__field {
-  flex-grow: 1;
-  padding: 14px 36px 14px 15px;
+  width: 100%;
 
   &::placeholder {
     font-size: 16px;
@@ -12,6 +11,7 @@
 
 .email__title {
   margin-right: 11px;
+  flex: 0 0 auto;
 }
 
 @media (min-width: $tablet-width) {
