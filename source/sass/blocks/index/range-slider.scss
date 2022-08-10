@@ -1,7 +1,49 @@
 @use "./blocks/variables" as*;
 
 .range-slider__slide {
+  position: relative;
   margin-bottom: 14px;
+}
+
+.range-slider__image-wrapper {
+  display: flex;
+}
+
+.range-slider__image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.range-slider__button {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icone/slider-icone.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: translateY(-50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -248%;
+    left: 50%;
+    height: 256px;
+    width: 4px;
+    background-color: $gray;
+    transform: translateX(-50%);
+  }
+}
+
+.range-slider__button-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {

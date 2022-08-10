@@ -26,6 +26,10 @@
   line-height: 20px;
 }
 
+.cooperation__image {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .cooperation__container {
     padding: 60px 70px 56px 70px;
@@ -34,12 +38,12 @@
   }
 
   .cooperation__title {
-    width: 172px;
+    max-width: 172px;
   }
 
   .cooperation__address {
     text-align: right;
-    width: 160px;
+    max-width: 160px;
   }
 }
 

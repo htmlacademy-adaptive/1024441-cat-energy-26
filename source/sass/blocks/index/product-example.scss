@@ -62,18 +62,6 @@
   text-align: center;
 }
 
-.range__range-before,
-.range__range-became {
-  font-family: $oswald;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  background-color: transparent;
-  text-transform: uppercase;
-  text-align: center;
-  color: $black;
-}
-
 @media (min-width: $tablet-width) {
   .product-example {
     padding: 30px 43px 55px 30px;
@@ -101,7 +89,7 @@
   .product-example__subtitle {
     font-size: 20px;
     line-height: 20px;
-    width: 174px;
+    max-width: 174px;
     text-align: right;
   }
 
@@ -126,7 +114,7 @@
   }
 
   .product-example__discription-text {
-    width: 436px;
+    max-width: 436px;
     margin-bottom: 69px;
   }
 

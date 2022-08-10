@@ -2,7 +2,7 @@
 
 .copyright {
   padding: 22px 0;
-  width: 281px;
+  min-width: 281px;
 }
 
 .copyright__link {
@@ -17,6 +17,6 @@
   }
 
   .copyright__link {
-    width: 163px;
+    min-width: 163px;
   }
 }

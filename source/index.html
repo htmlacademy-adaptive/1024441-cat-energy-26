@@ -45,15 +45,15 @@
   <main class="main-container">
     <h1 class="visually-hidden">Магазин питания для котов «Кэт энерджи»</h1>
     <section class="banner">
-      <div class="main-banner__container">
-        <h2 class="main-banner__title">Функциональное
+      <div class="banner__container">
+        <h2 class="banner__title">Функциональное
           питание для котов</h2>
-        <p class="main-banner__subtitle">Занялся собой? Займись котом!</p>
+        <p class="banner__subtitle">Занялся собой? Займись котом!</p>
       </div>
-      <div class="main-banner__image-wrapper">
+      <div class="banner__image-wrapper">
         <img src="img/content-image/main-banner.png" width="280" height="270" alt="Cat Energy PRO.">
       </div>
-      <a class="main-banner__button" href="form.html">подобрать программу</a>
+      <a class="banner__button" href="form.html">подобрать программу</a>
     </section>
     <section class="service">
       <h2 class="visually-hidden">Направления питания</h2>
@@ -118,21 +118,21 @@
         </div>
         <div class="product-example__range-slider range-slider">
           <div class="range-slider__slide">
-            <div class="slide__image-wrapper slide__active">
-              <img class="slide__image--left" width="280" height="232" src="img/content-image/fat-cat.png"
+            <div class="range-slider__image-wrapper">
+              <img class="range-slider__image" width="280" height="256" src="img/content-image/left-cat.png"
                 alt="Кот до специализированного питания.">
+              <img class="range-slider__image" width="280" height="256" src="img/content-image/right-cat.png"
+                alt="Кот после специализированного питания.">
             </div>
-          </div>
-          <div class="range-slider__range range">
-            <button class="range__range-before" type="button">было</button>
-            <div class="range__scale scale">
-              <div class="scale__range-bar range-bar">
-                <button class="range-bar__button" type="button">
-                  <span class="visually-hidden">Управление слайдером</span>
-                </button>
-              </div>
-            </div>
-            <button class="range__range-became" type="button">стало</button>
+            <button class="range-slider__button" type="button">
+              <svg class="range-slider__button-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff" />
+                <path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" fill="#666" />
+                <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2" />
+              </svg>
+              <span class="visually-hidden">Ползунок</span>
+            </button>
           </div>
         </div>
       </div>
@@ -218,6 +218,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/burger.js"></script>
 </body>
 
 </html>

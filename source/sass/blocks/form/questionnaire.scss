@@ -13,7 +13,6 @@
 
 .questionnaire__item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
 
@@ -25,6 +24,7 @@
 .questionnaire__title {
   text-transform: uppercase;
   font-size: 16px;
+  margin-right: 10px;
 }
 
 .questionnaire__field {
@@ -40,7 +40,6 @@
   .questionnaire__title {
     font-size: 20px;
     line-height: 30px;
-    margin-right: 10px;
   }
 
   .questionnaire__field {

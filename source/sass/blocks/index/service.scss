@@ -61,7 +61,7 @@
 
 .service__discription {
   position: relative;
-  width: 227px;
+  max-width: 227px;
   margin: 0;
   margin-bottom: 38px;
 
@@ -132,7 +132,7 @@
   .service__discription {
     font-size: 16px;
     line-height: 24px;
-    width: 340px;
+    max-width: 340px;
 
     &::after {
       display: none;

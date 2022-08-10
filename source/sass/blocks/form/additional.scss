@@ -21,7 +21,7 @@
 @media (min-width: $tablet-width) {
   .additional__list {
     display: grid;
-    grid-template-columns: 221px 221px;
+    grid-template-columns: 1fr 1fr;
     gap: 32px 123px;
   }
 

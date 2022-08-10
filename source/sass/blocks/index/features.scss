@@ -33,7 +33,7 @@
   position: relative;
   margin: 0;
   padding-left: 80px;
-  width: 199px;
+  max-width: 199px;
 
   &--leaf::before {
     content: "";
@@ -42,7 +42,7 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-image: url("../img/icone/leaf.jpg");
+    background-image: url("../img/icone/leaf.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -54,7 +54,7 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-image: url("../img/icone/worm-water.jpg");
+    background-image: url("../img/icone/worm-water.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -66,7 +66,7 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-image: url("../img/icone/knife.jpg");
+    background-image: url("../img/icone/knife.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -78,7 +78,7 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-image: url("../img/icone/alarm.jpg");
+    background-image: url("../img/icone/alarm.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -116,7 +116,7 @@
 
   .features__text {
     padding: 0;
-    width: 245px;
+    max-width: 245px;
     padding-top: 151px;
 
     &--leaf::before {

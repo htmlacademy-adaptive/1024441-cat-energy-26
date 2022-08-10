@@ -20,7 +20,7 @@
 @media (min-width: $tablet-width) {
   .banner-gift__text {
     text-align: left;
-    width: 161px;
+    max-width: 161px;
   }
 
   .banner-gift {
@@ -31,7 +31,7 @@
 
 @media (min-width: $desktop-width) {
   .banner-gift {
-    width: 245px;
+    max-width: 245px;
     padding: 0;
   }
 }
