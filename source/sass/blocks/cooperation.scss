@@ -1,0 +1,61 @@
+@use "./blocks/variables" as*;
+
+.cooperation {
+  &--them-gray {
+    background-color: $light-gray;
+  }
+}
+
+.cooperation__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 0;
+}
+
+.cooperation__title {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $darken-black;
+  margin: 0;
+}
+
+.cooperation__address {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cooperation__image {
+  max-height: 200px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__container {
+    padding: 60px 40px 56px 40px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+
+  .cooperation__title {
+    max-width: 172px;
+  }
+
+  .cooperation__address {
+    text-align: right;
+    max-width: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    position: relative;
+  }
+
+  .cooperation__container {
+    position: absolute;
+    width: 565px;
+    background-color: $white;
+  }
+}

@@ -1,6 +1,10 @@
+@use "./blocks/variables" as*;
+
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .visually-hidden {
@@ -15,3 +19,20 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    max-width: $desktop-width;
+  }
+}
+

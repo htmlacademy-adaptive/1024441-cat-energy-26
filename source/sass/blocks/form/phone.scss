@@ -2,12 +2,21 @@
 
 .phone__field {
   font-size: 16px;
-  line-height: 18px;
+  flex-grow: 1;
+  padding: 14px 55px 14px 15px;
 
   &::placeholder {
-    font-family: $title-font;
-    font-size: 16px;
-    line-height: 18px;
+    font-family: $oswald;
     text-transform: uppercase;
+  }
+}
+
+.phone__title {
+  margin-right: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .phone__title {
+    margin-right: 14px;
   }
 }

@@ -1,5 +1,8 @@
+@use "./blocks/variables" as*;
+
 .additional {
   border: none;
+  margin-bottom: 34px;
 }
 
 .additional__list {
@@ -14,4 +17,29 @@
 
 .additional__item--last-item {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .additional {
+    margin: 0;
+  }
+
+  .additional__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 123px;
+  }
+
+  .additional__wrapper {
+    display: flex;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .additional__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 105px;
+  }
 }

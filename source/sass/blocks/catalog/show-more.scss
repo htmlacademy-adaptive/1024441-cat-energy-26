@@ -2,15 +2,10 @@
 
 .show-more {
   padding-bottom: 24px;
-  border-top: 1px solid $lightx2-gray;
-  border-bottom: 1px solid $lightx2-gray;
   background-image: url("../img/icone/plus.png");
   background-repeat: no-repeat;
-  background-position: top;
-}
-
-.show-more__wrapper {
-  padding-top: 78px;
+  background-position: center 30px;
+  min-height: 158px;
 }
 
 .show-more__card-description {
@@ -18,23 +13,78 @@
 }
 
 .show-more__title {
+  font-family: $oswald;
+  font-weight: inherit;
+  text-transform: uppercase;
+  color: $black;
+  font-size: 16px;
+  text-align: center;
   margin: 0;
   margin-bottom: 8px;
 }
 
 .show-more__text {
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
   margin: 0;
   margin-bottom: 21px;
 }
 
 .show-more__button {
   background-color: $light-gray;
-  font-family: $title-font;
-  font-weight: 400;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: $regular-color;
   padding: 10px 94px;
+  text-align: center;
+
+  &:hover {
+    background-color: $lightx2-gray;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    padding: 0 36px;
+    padding-bottom: 38px;
+    border: solid 2px $light-gray;
+  }
+
+  .show-more__card-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .show-more__title {
+    max-width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+    align-self: center;
+  }
+
+  .show-more__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .show-more__button {
+    text-align: center;
+    padding: 20px 79px;
+    line-height: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__button {
+    padding: 20px 39px;
+  }
 }

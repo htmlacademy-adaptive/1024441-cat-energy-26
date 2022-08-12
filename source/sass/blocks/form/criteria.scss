@@ -1,12 +1,14 @@
 @use "./blocks/variables" as*;
 
 .criteria {
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
   padding: 24px 0;
 }
 
 .criteria__list {
+  position: relative;
+  font-family: $oswald;
+  text-transform: uppercase;
+  font-size: 16px;
   padding: 20px 0;
   margin: 0;
   list-style: none;
@@ -18,4 +20,17 @@
 
 .criteria__item--last-item {
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .criteria__list {
+    padding: 25px 27px;
+    border: 1px solid $border-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .criteria__list {
+    padding: 29px 27px;
+  }
 }

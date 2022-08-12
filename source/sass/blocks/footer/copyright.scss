@@ -1,0 +1,22 @@
+@use "./blocks/variables" as*;
+
+.copyright {
+  padding: 22px 0;
+  min-width: 281px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__link {
+    min-width: 163px;
+  }
+}

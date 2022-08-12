@@ -1,7 +1,21 @@
+@use "./blocks/variables" as*;
+
 .email__field {
+  width: 100%;
+
   &::placeholder {
     font-size: 16px;
-    line-height: 18px;
     text-transform: uppercase;
+  }
+}
+
+.email__title {
+  margin-right: 11px;
+  flex: 0 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .email__title {
+    margin-right: 18px;
   }
 }

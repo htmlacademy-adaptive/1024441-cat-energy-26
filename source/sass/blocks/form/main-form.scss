@@ -1,20 +1,48 @@
 @use "./blocks/variables" as*;
 
 .main-form {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  padding: 27px 20px 0 20px;
-  color: $title-color;
-  border-top: 1px solid $border-color;
+  padding-top: 27px;
 }
 
 .main-form__title {
-  font-family: $title-font;
+  font-family: $oswald;
+  color: $black;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
   margin-bottom: 37px;
+}
+
+.main-form__wrapper {
+  margin-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    padding: 0;
+  }
+
+  .main-form__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  .main-form__wrapper {
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__title {
+    margin-bottom: 56px;
+  }
+
+  .main-form__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+    margin-bottom: 69px;
+  }
 }

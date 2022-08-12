@@ -1,49 +1,95 @@
 @use "./blocks/variables" as*;
 
 .form {
-  padding: 39px 0 32px 0;
+  padding-bottom: 32px;
 }
 
 .form__title {
-  font-family: $title-font;
+  font-family: $oswald;
+  color: $black;
   margin: 0;
   margin-bottom: 39px;
-  font-size: 14px;
-  line-height: 18px;
   text-transform: uppercase;
 }
 
 .form__subtitle {
-  font-family: $main-font;
-  font-weight: 400;
-  font-size: 14px;
+  color: $black;
   line-height: 16px;
   margin: 0;
+  text-align: center;
 }
 
 .form__field-group {
   border: none;
   padding: 0;
-  margin: 0;
-  margin-bottom: 26px;
 }
 
 .form__button {
+  width: 100%;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   padding: 7px 44px;
-  background-color: #68b738;
+  background-color: $regular-button;
   border: none;
   cursor: pointer;
   margin-bottom: 21px;
+  color: $white;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $regular-button--hover;
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 72px;
+  }
+
+  .form__title {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+    margin-bottom: 66px;
+  }
+
+  .form__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .form__footer-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__button {
+    width: 282px;
+    margin: 0;
+    margin-right: 61px;
+    padding: 13px 45px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-bottom: 82px;
+  }
+
+  .main-form__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+  }
+
+  .form__button {
+    max-width: 568px;
   }
 }

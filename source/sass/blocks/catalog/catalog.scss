@@ -11,7 +11,27 @@
 }
 
 .catalog__item {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-top: 19px;
-  border-top: 1px solid $lightx2-gray;
+  padding-bottom: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    margin-bottom: 68px;
+  }
+
+  .catalog__item {
+    padding: 0 38px;
+    justify-content: flex-end;
+    padding-bottom: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    padding-bottom: 40px;
+  }
 }
