@@ -1,5 +1,14 @@
 @use "./blocks/variables" as*;
 
+.field-group {
+  position: relative;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
 .field-group__title {
   font-family: $oswald;
   font-size: 24px;
@@ -9,6 +18,36 @@
   padding: 0;
   color: $black;
   max-width: 187px;
+
+  &--contact::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: calc(-22px);
+    width: 30%;
+    height: 2px;
+    background-color: $regular-button;
+  }
+
+  &--comment::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: calc(-22px);
+    width: 49%;
+    height: 2px;
+    background-color: $regular-button;
+  }
+
+  &--additional::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: calc(-22px);
+    width: 49%;
+    height: 2px;
+    background-color: $regular-button;
+  }
 }
 
 .field-group__email,
@@ -36,6 +75,54 @@
     line-height: 36px;
     margin-bottom: 76px;
     max-width: 514px;
+
+    &--contact::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: calc(-32px);
+      width: 30px;
+      height: 2px;
+      background-color: $regular-button;
+    }
+
+    &--contact::after {
+      top: 22px;
+      width: 19%;
+      right: calc(-32px);
+    }
+
+    &--comment::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: calc(-32px);
+      width: 30px;
+      height: 2px;
+      background-color: $regular-button;
+    }
+
+    &--comment::after {
+      top: 22px;
+      width: 72%;
+      right: calc(-32px);
+    }
+
+    &--additional::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: calc(-32px);
+      width: 30px;
+      height: 2px;
+      background-color: $regular-button;
+    }
+
+    &--additional::after {
+      top: 22px;
+      width: 68%;
+      right: calc(-32px);
+    }
   }
 
   .field-group {
@@ -49,6 +136,41 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 78px;
     align-items: center;
+  }
+
+  .field-group__title {
+    &--contact::before {
+      top: 22px;
+      left: calc(-112px);
+      width: 70px;
+    }
+
+    &--contact::after {
+      width: 64%;
+      right: calc(-112px);
+    }
+
+    &--comment::before {
+      top: 22px;
+      left: calc(-112px);
+      width: 70px;
+    }
+
+    &--comment::after {
+      width: 91%;
+      right: calc(-112px);
+    }
+
+    &--additional::before {
+      top: 22px;
+      left: calc(-112px);
+      width: 70px;
+    }
+
+    &--additional::after {
+      width: 89%;
+      right: calc(-112px);
+    }
   }
 
   .field-group__email {

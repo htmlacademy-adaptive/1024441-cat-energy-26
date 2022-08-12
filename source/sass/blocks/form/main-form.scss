@@ -2,6 +2,16 @@
 
 .main-form {
   padding-top: 27px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $border-color;
+  }
 }
 
 .main-form__title {
@@ -21,6 +31,10 @@
 @media (min-width: $tablet-width) {
   .main-form {
     padding: 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   .main-form__title {

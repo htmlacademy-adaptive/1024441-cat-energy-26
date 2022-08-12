@@ -6,22 +6,26 @@
   align-items: center;
   padding: 24px 0;
   justify-content: space-between;
+}
 
-  @media (min-width: $tablet-width) {
-    &--index-margin {
-      margin-bottom: 62px;
-    }
 
-    &--form-margin {
-      margin-bottom: 65px;
-    }
+@media (min-width: $tablet-width) {
+  .main-header-form {
+    margin-bottom: 65px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 70px;
-
-    &--index-margin {
-      margin-bottom: 74px;
-    }
+  .main-header-index {
+    margin-bottom: 62px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding-top: 70px;
+  }
+
+  .main-header-index {
+    margin-bottom: 74px;
+  }
+}
+

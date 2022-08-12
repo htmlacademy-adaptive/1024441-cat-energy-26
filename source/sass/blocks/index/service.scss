@@ -12,6 +12,7 @@
 }
 
 .service__item {
+  position: relative;
   padding: 24px 0 18px 20px;
   background-color: $light-gray;
   margin-bottom: 20px;
@@ -22,44 +23,25 @@
 }
 
 .service__title {
-  position: relative;
   font-family: $oswald;
   font-weight: inherit;
   font-size: 24px;
   line-height: 37px;
-  padding-left: 69px;
   margin: 0;
   margin-bottom: 29px;
   text-transform: uppercase;
   color: $black;
+}
 
-  &--weight-loss::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -12px;
-    width: 50px;
-    height: 53px;
-    background-image: url("../img/icone/weight-loss.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.service__item-header {
+  display: flex;
+}
 
-  &--massa-cat::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -12px;
-    width: 67px;
-    height: 50px;
-    background-image: url("../img/icone/massa-cat.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.service__icone-wrapper {
+  margin-right: 19px;
 }
 
 .service__discription {
-  position: relative;
   max-width: 227px;
   margin: 0;
   margin-bottom: 38px;
@@ -67,10 +49,10 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0;
-    bottom: -24px;
+    left: 20px;
+    bottom: 58px;
     height: 1px;
-    width: 240px;
+    min-width: 85%;
     background-color: $border-color;
   }
 }
