@@ -8,7 +8,7 @@
     position: absolute;
     content: "";
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 1px;
     background-color: $border-color;
   }
@@ -37,6 +37,10 @@
     }
   }
 
+  .main-form__container {
+    padding-left: 40px;
+  }
+
   .main-form__title {
     font-size: 60px;
     line-height: 60px;
@@ -49,6 +53,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-form__container {
+    padding-left: 0;
+  }
+
   .main-form__title {
     margin-bottom: 56px;
   }

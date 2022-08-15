@@ -2,14 +2,45 @@
 
 .main-header {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   align-items: center;
   padding: 24px 0;
   justify-content: space-between;
 }
 
+.main-header--nojs {
+  padding-bottom: 0;
+}
+
+.main-header__toggle {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  }
+}
 
 @media (min-width: $tablet-width) {
+  .main-header__toggle {
+    display: none;
+  }
+
   .main-header-form {
     margin-bottom: 65px;
   }

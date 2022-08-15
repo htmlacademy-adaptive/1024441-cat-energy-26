@@ -15,7 +15,17 @@
   flex-direction: column;
   position: relative;
   padding-top: 19px;
-  padding-bottom: 14px;
+  padding-bottom: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    height: 1px;
+    width: 100vw;
+    background-color: $lightx2-gray;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -27,6 +37,10 @@
     padding: 0 38px;
     justify-content: flex-end;
     padding-bottom: 39px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 

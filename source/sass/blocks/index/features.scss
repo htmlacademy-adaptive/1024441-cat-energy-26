@@ -32,6 +32,9 @@
 
 .features__image-wrapper {
   margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: $regular-button;
 }
 
 .features__item--last-item {
@@ -53,10 +56,9 @@
     &::after {
       content: "";
       position: absolute;
-      left: -30px;
       bottom: 30px;
       height: 1px;
-      width: 110%;
+      width: 100vw;
       background-color: $nav-gray;
     }
   }

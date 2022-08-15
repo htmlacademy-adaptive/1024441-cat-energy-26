@@ -2,6 +2,16 @@
 
 .questionnaire {
   margin-bottom: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 29vh;
+    width: 100vw;
+    height: 1px;
+    background-color: $border-color;
+  }
 }
 
 .questionnaire__list {
@@ -9,16 +19,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 20%;
-    width: 100%;
-    height: 1px;
-    background-color: $border-color;
-  }
 }
 
 .questionnaire__item {
@@ -48,15 +48,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .questionnaire__title {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .questionnaire__list {
+  .questionnaire {
     &::after {
       display: none;
     }
+  }
+
+  .questionnaire__title {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .questionnaire__field {

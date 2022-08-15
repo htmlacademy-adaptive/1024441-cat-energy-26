@@ -18,35 +18,30 @@
   padding: 0;
   color: $black;
   max-width: 187px;
+  background-color: $white;
+  z-index: 1;
 
-  &--contact::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    right: calc(-22px);
-    width: 30%;
-    height: 2px;
-    background-color: $regular-button;
+  &--contact {
+    padding-right: 14px;
   }
 
-  &--comment::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    right: calc(-22px);
-    width: 49%;
-    height: 2px;
-    background-color: $regular-button;
+  &--comment {
+    padding-right: 22px;
   }
 
-  &--additional::after {
+  &--additional {
+    padding-right: 23px;
+  }
+
+  &::after {
     content: "";
     position: absolute;
     top: 16px;
-    right: calc(-22px);
-    width: 49%;
+    right: -22px;
+    width: 90vw;
     height: 2px;
     background-color: $regular-button;
+    z-index: -1;
   }
 }
 
@@ -76,52 +71,22 @@
     margin-bottom: 76px;
     max-width: 514px;
 
-    &--contact::before {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: calc(-32px);
-      width: 30px;
-      height: 2px;
-      background-color: $regular-button;
+    &--contact {
+      padding-right: 42px;
     }
 
-    &--contact::after {
-      top: 22px;
-      width: 19%;
-      right: calc(-32px);
+    &--comment {
+      padding-right: 38px;
     }
 
-    &--comment::before {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: calc(-32px);
-      width: 30px;
-      height: 2px;
-      background-color: $regular-button;
+    &--additional {
+      padding-right: 41px;
     }
 
-    &--comment::after {
-      top: 22px;
-      width: 72%;
-      right: calc(-32px);
-    }
-
-    &--additional::before {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: calc(-32px);
-      width: 30px;
-      height: 2px;
-      background-color: $regular-button;
-    }
-
-    &--additional::after {
-      top: 22px;
-      width: 68%;
-      right: calc(-32px);
+    &::after {
+      width: 100vw;
+      right: -30px;
+      background: linear-gradient(to right, $regular-button 4%, transparent 4% 10%, $regular-button 10% 100%);
     }
   }
 
@@ -139,37 +104,21 @@
   }
 
   .field-group__title {
-    &--contact::before {
-      top: 22px;
-      left: calc(-112px);
-      width: 70px;
+    &--contact {
+      padding-right: 42px;
     }
 
-    &--contact::after {
-      width: 64%;
-      right: calc(-112px);
+    &--comment {
+      padding-right: 38px;
     }
 
-    &--comment::before {
-      top: 22px;
-      left: calc(-112px);
-      width: 70px;
+    &--additional {
+      padding-right: 41px;
     }
 
-    &--comment::after {
-      width: 91%;
-      right: calc(-112px);
-    }
-
-    &--additional::before {
-      top: 22px;
-      left: calc(-112px);
-      width: 70px;
-    }
-
-    &--additional::after {
-      width: 89%;
-      right: calc(-112px);
+    &::after {
+      right: -110px;
+      background: linear-gradient(to right, #68b738 11%, transparent 11% 14%, #68b738 14% 100%);
     }
   }
 
