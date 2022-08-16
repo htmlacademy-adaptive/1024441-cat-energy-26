@@ -4,7 +4,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  background-color: $white;
+
   color: $white;
   margin-bottom: 20px;
 }
@@ -49,13 +49,14 @@
 }
 
 .banner__button {
+  width: 100%;
   font-family: $oswald;
   text-decoration: none;
   color: inherit;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  padding: 7px 73px;
+  padding: 7px 0;
   background-color: $regular-button;
   cursor: pointer;
   align-self: center;
@@ -69,17 +70,22 @@
   }
 }
 
+.banner__wrapper {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .banner {
-    padding-bottom: 526px;
+    min-height: 726px;
     align-items: flex-start;
   }
 
   .banner__container {
-    background: $white;
+    background: transparent;
     padding: 0;
+    min-height: 170px;
     padding-left: 117px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 
   .banner__title {
@@ -98,7 +104,12 @@
     text-align: left;
   }
 
+  .banner__wrapper {
+    padding-left: 117px;
+  }
+
   .banner__button {
+    max-width: 224px;
     align-self: auto;
   }
 
@@ -110,7 +121,22 @@
 
 @media (min-width: $desktop-width) {
   .banner {
-    padding-bottom: 185px;
+    min-height: 553px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -35%;
+      right: 0;
+      z-index: -1;
+      width: 50%;
+      height: 694px;
+      background:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/background-main-bannerjpg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   .banner__button {

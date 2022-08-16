@@ -1,5 +1,14 @@
 @use "./blocks/variables" as*;
 
+.field-group {
+  position: relative;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
 .field-group__title {
   font-family: $oswald;
   font-size: 24px;
@@ -9,6 +18,31 @@
   padding: 0;
   color: $black;
   max-width: 187px;
+  background-color: $white;
+  z-index: 1;
+
+  &--contact {
+    padding-right: 14px;
+  }
+
+  &--comment {
+    padding-right: 22px;
+  }
+
+  &--additional {
+    padding-right: 23px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: -22px;
+    width: 90vw;
+    height: 2px;
+    background-color: $regular-button;
+    z-index: -1;
+  }
 }
 
 .field-group__email,
@@ -36,6 +70,24 @@
     line-height: 36px;
     margin-bottom: 76px;
     max-width: 514px;
+
+    &--contact {
+      padding-right: 42px;
+    }
+
+    &--comment {
+      padding-right: 38px;
+    }
+
+    &--additional {
+      padding-right: 41px;
+    }
+
+    &::after {
+      width: 100vw;
+      right: -30px;
+      background: linear-gradient(to right, $regular-button 4%, transparent 4% 10%, $regular-button 10% 100%);
+    }
   }
 
   .field-group {
@@ -49,6 +101,25 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 78px;
     align-items: center;
+  }
+
+  .field-group__title {
+    &--contact {
+      padding-right: 42px;
+    }
+
+    &--comment {
+      padding-right: 38px;
+    }
+
+    &--additional {
+      padding-right: 41px;
+    }
+
+    &::after {
+      right: -110px;
+      background: linear-gradient(to right, #68b738 11%, transparent 11% 14%, #68b738 14% 100%);
+    }
   }
 
   .field-group__email {

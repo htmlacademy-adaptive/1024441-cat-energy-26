@@ -2,6 +2,16 @@
 
 .questionnaire {
   margin-bottom: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 29vh;
+    width: 100vw;
+    height: 1px;
+    background-color: $border-color;
+  }
 }
 
 .questionnaire__list {
@@ -38,6 +48,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .questionnaire {
+    &::after {
+      display: none;
+    }
+  }
+
   .questionnaire__title {
     font-size: 20px;
     line-height: 30px;

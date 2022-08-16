@@ -10,19 +10,6 @@
   color: $black;
 }
 
-.main-nav__toggle {
-  background-color: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  width: 24px;
-  height: 18px;
-  background-image: url("../img/icone/burger.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .main-nav__list {
   display: none;
   list-style: none;
@@ -32,19 +19,38 @@
   &--open {
     display: flex;
     min-width: 320px;
-    width: 115%;
+    width: 100vw;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: 86px;
     right: calc(-20px);
     background-color: $white;
     z-index: 1;
   }
 }
 
-
 .main-nav__item {
-  border-top: 1px solid $nav-gray;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $nav-gray;
+  }
+
+  &--last-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $nav-gray;
+  }
 }
 
 .main-nav__link {
@@ -58,15 +64,28 @@
   color: inherit;
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
+.main-nav--nojs {
+  margin-top: 20px;
+}
 
+.main-nav__list--nojs {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  position: static;
+  background-color: #ffffff;
+  margin-left: -20px;
+}
+
+@media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
     flex-direction: row;
     z-index: 0;
+
+    &--open {
+      position: static;
+    }
   }
 
   .main-nav__item {
@@ -75,6 +94,20 @@
 
     &--last-item {
       margin: 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      &--last-line::after {
+        display: none;
+      }
     }
   }
 
@@ -92,6 +125,30 @@
       width: 100%;
       height: 2px;
       background-color: $regular-button;
+    }
+
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    &--white-theme {
+      color: $white;
+    }
+  }
+
+  .main-nav__link {
+    &--white-theme-current::before {
+      position: absolute;
+      content: "";
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $white;
     }
   }
 }

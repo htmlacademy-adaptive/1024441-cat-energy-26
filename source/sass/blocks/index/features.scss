@@ -21,11 +21,28 @@
 }
 
 .features__item {
+  position: relative;
+  display: flex;
   margin-bottom: 20px;
 
   &:last-child {
     margin: 0;
   }
+}
+
+.features__image-wrapper {
+  position: relative;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: $regular-button;
+}
+
+.features__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .features__item--last-item {
@@ -35,56 +52,7 @@
 .features__text {
   position: relative;
   margin: 0;
-  padding-left: 80px;
   max-width: 199px;
-
-  &--leaf::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icone/leaf.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &--worm-water::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icone/worm-water.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &--knife::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icone/knife.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &--alarm::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url("../img/icone/alarm.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -96,10 +64,9 @@
     &::after {
       content: "";
       position: absolute;
-      left: -30px;
       bottom: 30px;
       height: 1px;
-      width: 110%;
+      width: 100vw;
       background-color: $nav-gray;
     }
   }
@@ -114,28 +81,38 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 37px 137px;
+    counter-reset: section;
+  }
+
+  .features__item {
+    flex-direction: column;
+    min-height: 280px;
+    max-width: 249px;
+    margin: 0;
+    padding-top: 40px;
+
+    &::after {
+      position: absolute;
+      content: counter(section);
+      top: 0;
+      right: 10%;
+      z-index: -1;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: $light-gray;
+      counter-increment: section;
+    }
+  }
+
+  .features__image-wrapper {
+    margin: 0;
+    margin-bottom: 31px;
   }
 
   .features__text {
     padding: 0;
     max-width: 245px;
-    padding-top: 151px;
-
-    &--leaf::before {
-      top: 40px;
-    }
-
-    &--worm-water::before {
-      top: 40px;
-    }
-
-    &--knife::before {
-      top: 40px;
-    }
-
-    &--alarm::before {
-      top: 40px;
-    }
   }
 }
 

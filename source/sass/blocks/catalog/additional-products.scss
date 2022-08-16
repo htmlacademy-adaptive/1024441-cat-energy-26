@@ -58,11 +58,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 109px;
+  padding: 10px 0;
   background-color: $regular-button;
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+  width: 100%;
 
   &:hover {
     background-color: $regular-button--hover;
@@ -134,6 +136,7 @@
 
   .additional-products__wrapper {
     flex-direction: row;
+    min-width: 288px;
   }
 
   .additional-products__list {
@@ -158,13 +161,14 @@
 
   .additional-products__name {
     margin: 0;
+    min-width: 161px;
   }
 
   .additional-products__size {
-    margin-right: 112px;
+    margin: 0;
   }
 
   .additional-products__button {
-    width: auto;
+    max-width: 244px;
   }
 }

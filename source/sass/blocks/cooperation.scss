@@ -31,6 +31,13 @@
   width: 100%;
 }
 
+.cooperation__map {
+  min-width: 100%;
+  min-height: 362px;
+  display: block;
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .cooperation__container {
     padding: 60px 40px 56px 40px;
@@ -46,6 +53,10 @@
     text-align: right;
     max-width: 160px;
   }
+
+  .cooperation__map {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -55,6 +66,8 @@
 
   .cooperation__container {
     position: absolute;
+    top: 95px;
+    left: 8%;
     width: 565px;
     background-color: $white;
   }
