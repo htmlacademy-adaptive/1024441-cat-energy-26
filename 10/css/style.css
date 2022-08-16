@@ -530,10 +530,18 @@ img {
 }
 
 .features__image-wrapper {
+  position: relative;
   margin-right: 20px;
   width: 60px;
   height: 60px;
   background-color: #68b738;
+}
+
+.features__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .features__item--last-item {
@@ -893,10 +901,13 @@ img {
 }
 
 .service__item {
+  display: grid;
   position: relative;
+  grid-template-columns: repeat(4, 1fr);
   padding: 24px 0 18px 20px;
   background-color: #f2f2f2;
   margin-bottom: 20px;
+  gap: 20px 0;
 }
 .service__item:last-child {
   margin: 0;
@@ -908,32 +919,32 @@ img {
   font-size: 24px;
   line-height: 37px;
   margin: 0;
-  margin-bottom: 29px;
   text-transform: uppercase;
   color: #000000;
-}
-
-.service__item-header {
-  display: flex;
+  grid-row: 1;
+  grid-column: 2/5;
 }
 
 .service__icone-wrapper {
-  margin-right: 19px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+  grid-row: 1;
+}
+
+.service__icone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .service__discription {
   max-width: 227px;
   margin: 0;
-  margin-bottom: 38px;
-}
-.service__discription::after {
-  content: "";
-  position: absolute;
-  left: 20px;
-  bottom: 58px;
-  height: 1px;
-  min-width: 85%;
-  background-color: #d9d9d9;
+  grid-column: 1/5;
 }
 
 .service__button {
@@ -941,10 +952,20 @@ img {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-  padding: 4px 47px 4px 0;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  max-width: 132px;
+  grid-column: 1/3;
+}
+.service__button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  height: 1px;
+  min-width: 75vw;
+  background-color: #d9d9d9;
 }
 .service__button::after {
   content: "";
@@ -952,7 +973,7 @@ img {
   width: 24px;
   height: 12px;
   right: 0;
-  top: 17px;
+  top: 8px;
   transform: translateY(-50%);
   background-image: url("../img/icone/arrow-right.png");
   background-repeat: no-repeat;
@@ -968,7 +989,7 @@ img {
   }
 
   .service__item {
-    padding: 77px 0 53px 53px;
+    padding: 77px 62px 53px 53px;
     margin-bottom: 30px;
   }
 
@@ -976,6 +997,7 @@ img {
     padding: 0;
     font-size: 36px;
     line-height: 36px;
+    grid-column: 1/4;
   }
   .service__title--weight-loss::before {
     display: none;
@@ -987,9 +1009,17 @@ img {
   .service__discription {
     font-size: 16px;
     line-height: 24px;
-    max-width: 340px;
+    max-width: 357px;
   }
-  .service__discription::after {
+
+  .service__icone-wrapper {
+    width: 200px;
+    height: 200px;
+    grid-column: -1;
+    grid-row: 1/4;
+  }
+
+  .service__button::before {
     display: none;
   }
 }
@@ -1001,7 +1031,24 @@ img {
   }
 
   .service__item {
+    padding: 47px 61px 58px 33px;
     margin: 0;
+  }
+
+  .service__icone-wrapper {
+    width: 100px;
+    height: 100px;
+    grid-column: 1;
+    margin-right: 60px;
+  }
+
+  .service__title {
+    grid-column: 2/5;
+    grid-row: 2;
+  }
+
+  .service__discription {
+    max-width: 457px;
   }
 }
 .cooperation--them-gray {
