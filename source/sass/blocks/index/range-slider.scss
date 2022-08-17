@@ -27,6 +27,16 @@
   height: 40px;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  &:hover .range-slider__button-icon {
+    color: $regular-button;
+  }
+
+  &:hover + .range-slider__line {
+    &::after {
+      background-color: $regular-button;
+    }
+  }
 }
 
 .range-slider__button-icon {
@@ -34,6 +44,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  color: $gray;
 }
 
 .range-slider__toggle-wrapper {

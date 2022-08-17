@@ -31,8 +31,8 @@
 }
 
 .social__link {
-  &:hover + .social__icon {
-    fill: $regular-button;
+  &:hover .social__icon {
+    stroke: $regular-button;
   }
 
   &:active {
@@ -40,18 +40,6 @@
   }
 }
 
-.copyright__link {
-  font-size: 16px;
-  color: $regular-color;
-
-  &:hover + .copyright__icon {
-    fill: $regular-button;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .main-footer {
