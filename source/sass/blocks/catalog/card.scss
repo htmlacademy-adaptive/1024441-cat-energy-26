@@ -10,6 +10,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $black;
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 18px;
   width: 76px;
@@ -75,7 +76,7 @@
 @media (min-width: $tablet-width) {
   .card {
     margin: 0;
-    background-color: $light-gray;
+    background: linear-gradient(to bottom, transparent 0%, transparent 11%, $light-gray 11%);
   }
 
   .card__wrapper {
@@ -125,6 +126,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .card {
+    background: linear-gradient(to bottom, transparent 0%, transparent 13%, #f2f2f2 13%);
+  }
+
   .card__link {
     padding: 10px 53px;
   }

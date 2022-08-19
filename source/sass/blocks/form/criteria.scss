@@ -12,9 +12,30 @@
   padding: 20px 0;
   margin: 0;
   list-style: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $border-color;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: $border-color;
+  }
 }
 
 .criteria__item {
+  padding: 5px 0;
   margin-bottom: 13px;
 }
 
@@ -26,6 +47,11 @@
   .criteria__list {
     padding: 25px 27px;
     border: 1px solid $border-color;
+
+    &::after,
+    &::before {
+      display: none;
+    }
   }
 }
 

@@ -2,14 +2,19 @@
 
 .show-more {
   padding-bottom: 24px;
-  background-image: url("../img/icone/plus.png");
-  background-repeat: no-repeat;
-  background-position: center 30px;
   min-height: 158px;
 }
 
 .show-more__card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
+}
+
+.show-more__icon {
+  max-width: 30px;
+  margin-bottom: 23px;
 }
 
 .show-more__title {
@@ -28,7 +33,6 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
-  margin-bottom: 21px;
 }
 
 .show-more__button {
@@ -53,14 +57,19 @@
 
 @media (min-width: $tablet-width) {
   .show-more {
-    padding: 0 36px;
-    padding-bottom: 38px;
+    padding: 50px 36px 38px 36px;
     border: solid 2px $light-gray;
+    max-height: 429px;
+    align-self: flex-end;
   }
 
-  .show-more__card-description {
-    display: flex;
-    flex-direction: column;
+  .show-more__wrapper {
+    margin-bottom: 87px;
+  }
+
+  .show-more__icon {
+    max-width: 60px;
+    margin-bottom: 49px;
   }
 
   .show-more__title {
@@ -74,6 +83,7 @@
   .show-more__text {
     font-size: 16px;
     line-height: 18px;
+    max-width: 167px;
   }
 
   .show-more__button {
