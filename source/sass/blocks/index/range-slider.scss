@@ -1,5 +1,9 @@
 @use "./blocks/variables" as*;
 
+.range-slider {
+  overflow: hidden;
+}
+
 .range-slider__slide {
   position: relative;
   margin-bottom: 14px;

@@ -2,7 +2,7 @@
 
 .field-group {
   position: relative;
-  margin-bottom: 23px;
+  margin: 0 0 23px 0;
 
   &:last-child {
     margin: 0;
@@ -10,6 +10,7 @@
 }
 
 .field-group__title {
+  display: inline-block;
   font-family: $oswald;
   font-size: 24px;
   line-height: 26px;
@@ -17,12 +18,12 @@
   text-transform: none;
   padding: 0;
   color: $black;
-  max-width: 187px;
+  font-weight: 400;
   background-color: $white;
   z-index: 1;
 
   &--contact {
-    max-width: 228px;
+    max-width: 200px;
     padding-right: 14px;
   }
 
@@ -70,9 +71,9 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-    max-width: 340px;
 
     &--contact {
+      max-width: none;
       padding-right: 42px;
     }
 

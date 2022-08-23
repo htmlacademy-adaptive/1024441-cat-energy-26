@@ -1,6 +1,7 @@
 @use "./blocks/variables" as*;
 
 .product-example {
+  overflow: hidden;
   padding: 25px 0 40px 0;
   background-color: $darken-gray;
 }

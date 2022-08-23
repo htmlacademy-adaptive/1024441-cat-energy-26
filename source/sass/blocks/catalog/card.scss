@@ -122,6 +122,8 @@
   .card__link {
     font-size: 16px;
     line-height: 20px;
+    min-width: 248px;
+    padding: 10px 0;
   }
 }
 
@@ -131,7 +133,7 @@
   }
 
   .card__link {
-    padding: 10px 53px;
+    min-width: 168px;
   }
 
   .card__title {
