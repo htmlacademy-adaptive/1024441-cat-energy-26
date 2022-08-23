@@ -2,7 +2,7 @@
 
 .field-group {
   position: relative;
-  margin-bottom: 23px;
+  margin: 0 0 23px 0;
 
   &:last-child {
     margin: 0;
@@ -10,18 +10,20 @@
 }
 
 .field-group__title {
+  display: inline-block;
   font-family: $oswald;
   font-size: 24px;
   line-height: 26px;
-  margin-bottom: 34px;
+  margin: 0 0 34px 0;
   text-transform: none;
   padding: 0;
   color: $black;
-  max-width: 187px;
+  font-weight: 400;
   background-color: $white;
   z-index: 1;
 
   &--contact {
+    max-width: 200px;
     padding-right: 14px;
   }
 
@@ -36,7 +38,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 16px;
+    top: 14px;
     right: -22px;
     width: 90vw;
     height: 2px;
@@ -69,9 +71,9 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
-    max-width: 514px;
 
     &--contact {
+      max-width: none;
       padding-right: 42px;
     }
 
@@ -118,7 +120,7 @@
 
     &::after {
       right: -110px;
-      background: linear-gradient(to right, #68b738 11%, transparent 11% 14%, #68b738 14% 100%);
+      background: linear-gradient(to right, #68b738 5%, transparent 5% 14%, #68b738 14% 100%);
     }
   }
 

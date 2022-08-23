@@ -3,6 +3,7 @@
 .main-form {
   padding-top: 27px;
   position: relative;
+  overflow: hidden;
 
   &::before {
     position: absolute;

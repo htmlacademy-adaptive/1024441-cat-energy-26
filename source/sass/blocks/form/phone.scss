@@ -11,6 +11,21 @@
   }
 }
 
+.phone__field-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.phone__field-wrapper:focus-within .field + .phone__icon {
+  color: $regular-button;
+}
+
+.phone__icon {
+  position: absolute;
+  top: 8px;
+  right: 4px;
+}
+
 .phone__title {
   margin-right: 8px;
 }

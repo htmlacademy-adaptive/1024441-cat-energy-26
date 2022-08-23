@@ -12,11 +12,12 @@
 }
 
 .additional__item {
+  padding: 5px 0;
   margin-bottom: 13px;
-}
 
-.additional__item--last-item {
-  margin: 0;
+  &:last-child {
+    margin: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {

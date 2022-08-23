@@ -1,6 +1,7 @@
 @use "./blocks/variables" as*;
 
 .features {
+  overflow: hidden;
   margin-bottom: 50px;
 }
 
@@ -66,7 +67,7 @@
       position: absolute;
       bottom: 30px;
       height: 1px;
-      width: 100vw;
+      width: 100%;
       background-color: $nav-gray;
     }
   }

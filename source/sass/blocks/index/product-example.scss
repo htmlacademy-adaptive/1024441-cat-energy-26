@@ -1,6 +1,7 @@
 @use "./blocks/variables" as*;
 
 .product-example {
+  overflow: hidden;
   padding: 25px 0 40px 0;
   background-color: $darken-gray;
 }
@@ -153,7 +154,7 @@
 @media (min-width: $desktop-width) {
   .product-example {
     padding: 0 0 75px 0;
-    background: linear-gradient(to bottom, transparent 0%, transparent 22%, $darken-gray 22%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 44%, #eaeaea 44%);
   }
 
   .product-example__container {
@@ -162,7 +163,7 @@
   }
 
   .product-example__title {
-    margin-bottom: 146px;
+    margin-bottom: 76px;
   }
 
   .product-example__discription-text {
@@ -174,7 +175,6 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    padding-top: 50px;
   }
 
   .product-example__item-discription {
@@ -195,6 +195,6 @@
   }
 
   .product-example__list {
-    margin-bottom: 55px;
+    margin-bottom: 47px;
   }
 }

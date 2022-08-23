@@ -5,18 +5,31 @@
   min-width: 281px;
 }
 
+.copyright__icon {
+  color: $gray;
+}
+
 .copyright__link {
   display: flex;
+  text-decoration: none;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
+  color: $regular-color;
+
+  &:hover .copyright__icon {
+    color: $regular-button;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .copyright {
     padding: 0;
-  }
-
-  .copyright__link {
     min-width: 163px;
   }
 }

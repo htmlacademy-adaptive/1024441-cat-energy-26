@@ -1,6 +1,7 @@
 @use "./blocks/variables" as*;
 
 .service {
+  overflow: hidden;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -15,7 +16,7 @@
   display: grid;
   position: relative;
   grid-template-columns: repeat(4, 1fr);
-  padding: 24px 0 18px 20px;
+  padding: 24px 22px 18px 20px;
   background-color: $light-gray;
   margin-bottom: 20px;
   gap: 20px 0;
@@ -35,28 +36,50 @@
   color: $black;
   grid-row: 1;
   grid-column: 2/5;
+  padding-right: 20px;
 }
 
 .service__icone-wrapper {
   position: relative;
-  width: 50px;
-  height: 50px;
-  background-color: $regular-button;
-  border-radius: 50%;
+  width: 100%;
+  height: auto;
   grid-row: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $regular-button;
+    z-index: 0;
+  }
 }
 
 .service__icone {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  &--weight-loss {
+    position: absolute;
+    top: -9px;
+    left: 8px;
+    max-width: 36px;
+  }
+
+  &--massa-cat {
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    max-width: 67px;
+  }
 }
 
 .service__discription {
-  max-width: 227px;
   margin: 0;
   grid-column: 1/5;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $border-color;
 }
 
 .service__button {
@@ -69,16 +92,6 @@
   color: $black;
   max-width: 132px;
   grid-column: 1/3;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -10px;
-    height: 1px;
-    min-width: 75vw;
-    background-color: $border-color;
-  }
 
   &::after {
     content: "";
@@ -113,20 +126,13 @@
     font-size: 36px;
     line-height: 36px;
     grid-column: 1/4;
-
-    &--weight-loss::before {
-      display: none;
-    }
-
-    &--massa-cat::before {
-      display: none;
-    }
   }
 
   .service__discription {
     font-size: 16px;
     line-height: 24px;
-    max-width: 357px;
+    max-width: 340px;
+    border: none;
   }
 
   .service__icone-wrapper {
@@ -134,6 +140,25 @@
     height: 200px;
     grid-column: -1;
     grid-row: 1/4;
+
+    &::before {
+      max-width: 200px;
+      height: 200px;
+    }
+  }
+
+  .service__icone {
+    &--weight-loss {
+      max-width: 140px;
+      top: -14px;
+      left: 29px;
+    }
+
+    &--massa-cat {
+      top: 45px;
+      left: -50px;
+      min-width: 268px;
+    }
   }
 
   .service__button {
@@ -160,6 +185,25 @@
     height: 100px;
     grid-column: 1;
     margin-right: 60px;
+
+    &::before {
+      max-width: 100px;
+      height: 100px;
+    }
+  }
+
+  .service__icone {
+    &--weight-loss {
+      max-width: 70px;
+      top: -14px;
+      left: 12px;
+    }
+
+    &--massa-cat {
+      top: 23px;
+      left: -18px;
+      min-width: 134px;
+    }
   }
 
   .service__title {

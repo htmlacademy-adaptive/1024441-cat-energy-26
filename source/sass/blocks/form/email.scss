@@ -14,6 +14,21 @@
   flex: 0 0 auto;
 }
 
+.email__field-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.email__field-wrapper:focus-within .field + .email__icon {
+  color: $regular-button;
+}
+
+.email__icon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
 @media (min-width: $tablet-width) {
   .email__title {
     margin-right: 18px;

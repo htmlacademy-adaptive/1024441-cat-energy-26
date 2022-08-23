@@ -1,15 +1,15 @@
 @use "./blocks/variables" as*;
 
 .banner-gift {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/background-cat-gift.jpg");
+    url("../img/content-image/background-cat-gift-phone.jpg") no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 290px;
+
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/content-image/background-cat-gift-phone@2x.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 .banner-gift__text {
@@ -21,22 +21,68 @@
   color: $white;
 }
 
+.banner-gift__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 290px;
+}
+
+.banner-gift__icon-wrapper {
+  margin-bottom: 48px;
+}
+
 @media (min-width: $tablet-width) {
+  .banner-gift {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/content-image/background-cat-gift-tablet.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/content-image/background-cat-gift-tablet@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+
   .banner-gift__text {
     text-align: left;
     max-width: 161px;
   }
 
-  .banner-gift {
+  .banner-gift__container {
     flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .banner-gift__icon-wrapper {
+    margin: 0;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .banner-gift {
-    min-width: 245px;
-    padding: 0;
-    min-height: 289px;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/content-image/background-cat-gift-desktop.jpg") no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/content-image/background-cat-gift-desktop@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .banner-gift__container {
+    flex-direction: column;
+    padding-top: 55px;
+    min-height: 245px;
+  }
+
+  .banner-gift__text {
+    text-align: center;
   }
 }
