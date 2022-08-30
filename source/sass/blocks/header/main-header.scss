@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   position: relative;
   align-items: center;
-  padding: 24px 0;
+  padding: 13px 0;
   justify-content: space-between;
 
   &--nojs {
@@ -61,6 +61,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    padding: 24px 0 13px 0;
+  }
+
   .main-header__toggle {
     display: none;
   }
@@ -70,12 +74,24 @@
   }
 
   .main-header-index {
-    margin-bottom: 62px;
+    margin-bottom: 44px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-header-catalog {
+    margin-bottom: 64px;
+  }
+
   .main-header-index {
-    margin-bottom: 74px;
+    margin-bottom: 73px;
+  }
+
+  .main-header-form {
+    margin-bottom: 62px;
+  }
+
+  .main-header__wrapper {
+    padding: 53px 0 13px 0;
   }
 }

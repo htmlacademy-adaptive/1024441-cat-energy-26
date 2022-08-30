@@ -22,8 +22,14 @@
 }
 
 .cooperation__address {
+  font-style: normal;
   font-size: 14px;
   line-height: 20px;
+}
+
+.cooperation__address-first-part,
+.cooperation__address-last-part {
+  margin: 0;
 }
 
 .cooperation__image {
@@ -40,18 +46,30 @@
 
 @media (min-width: $tablet-width) {
   .cooperation__container {
-    padding: 60px 40px 56px 40px;
+    padding: 59px 41px 59px 40px;
     grid-template-columns: auto auto;
     justify-content: space-between;
   }
 
   .cooperation__title {
+    font-size: 20px;
+    line-height: 26px;
     max-width: 172px;
   }
 
   .cooperation__address {
     text-align: right;
     max-width: 160px;
+  }
+
+  .cooperation__address-first-part {
+    margin-bottom: 20px;
+  }
+
+  .cooperation__address-first-part,
+  .cooperation__address-last-part {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .cooperation__map {
@@ -66,9 +84,19 @@
 
   .cooperation__container {
     position: absolute;
-    top: 95px;
-    left: 8%;
+    top: 98px;
+    left: 109px;
     width: 565px;
     background-color: $white;
+    padding: 56px 80px;
+  }
+
+  .cooperation__address {
+    padding-left: 5px;
+  }
+
+  .cooperation__address-first-part,
+  .cooperation__address-last-part {
+    text-align: left;
   }
 }

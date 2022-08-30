@@ -1,13 +1,27 @@
 @use "./blocks/variables" as*;
 
 .field-comment {
-  padding: 10px 12px;
+  padding: 6px 14px;
   resize: none;
   width: 100%;
+  min-height: 150px;
+  border-color: $comment-border;
 
   &::placeholder {
     font-family: $oswald;
     font-size: 16px;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-comment {
+    min-height: 174px;
+    padding: 10px 0 0 19px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

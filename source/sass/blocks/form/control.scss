@@ -55,6 +55,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .control__radio-mark,
+  .control__checkbox-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .control__radio-mark {
+    top: -5px;
+    left: 1px;
+  }
+
+  .control__radio-input:checked + .control__radio-mark::after {
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+  }
+
   .control {
     font-size: 20px;
     line-height: 30px;
@@ -65,12 +83,5 @@
     width: 40px;
     height: 40px;
     top: -7px;
-  }
-
-  .control__radio-input:checked + .control__radio-mark::after {
-    width: 18px;
-    height: 18px;
-    top: 5px;
-    left: 5px;
   }
 }

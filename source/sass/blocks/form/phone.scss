@@ -3,7 +3,7 @@
 .phone__field {
   font-size: 16px;
   flex-grow: 1;
-  padding: 14px 55px 14px 15px;
+  padding: 14px 55px 13px 15px;
 
   &::placeholder {
     font-family: $oswald;
@@ -22,8 +22,8 @@
 
 .phone__icon {
   position: absolute;
-  top: 8px;
-  right: 4px;
+  top: 14px;
+  right: 13px;
 }
 
 .phone__title {
@@ -31,6 +31,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .phone__field {
+    padding: 19px 55px 13px 20px;
+  }
+
+  .phone__icon {
+    top: 16px;
+    right: 16px;
+  }
+
   .phone__title {
     margin-right: 14px;
   }

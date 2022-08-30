@@ -40,6 +40,7 @@
 
   .main-form__container {
     padding-left: 40px;
+    padding-right: 37px;
   }
 
   .main-form__title {
@@ -49,13 +50,13 @@
   }
 
   .main-form__wrapper {
-    margin-bottom: 71px;
+    margin-bottom: 75px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-form__container {
-    padding-left: 0;
+    padding: 0;
   }
 
   .main-form__title {
@@ -66,6 +67,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 80px;
-    margin-bottom: 69px;
+    margin-bottom: 50px;
   }
 }
