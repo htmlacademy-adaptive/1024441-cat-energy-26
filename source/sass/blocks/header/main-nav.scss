@@ -83,6 +83,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     z-index: 0;
+    padding-top: 8px;
 
     &--open {
       position: static;
@@ -137,6 +138,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__list {
     max-width: 478px;
+    padding: 0;
 
     &--white-theme {
       color: $white;
