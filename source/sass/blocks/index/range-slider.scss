@@ -6,7 +6,6 @@
 
 .range-slider__slide {
   position: relative;
-  margin-bottom: 14px;
 }
 
 .range-slider__image-wrapper {
@@ -22,7 +21,7 @@
 
 .range-slider__button {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   z-index: 1;
   border: none;
@@ -80,5 +79,33 @@
 
   .range-slider__slide {
     align-self: center;
+  }
+
+  .range-slider__image-wrapper {
+    position: relative;
+    left: -8px;
+  }
+
+  .range-slider__image {
+    padding-left: 16px;
+  }
+
+  .range-slider__line {
+    &::after {
+      left: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-slider {
+    position: relative;
+    top: -123px;
+    left: 8px;
+  }
+
+  .range-slider__button,
+  .range-slider__line::after {
+    left: 50%;
   }
 }

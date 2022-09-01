@@ -3,12 +3,40 @@
 .field {
   box-sizing: border-box;
   border: solid 1px $border-color;
-  padding: 10px 0 10px 18px;
   width: 100%;
 
   &::placeholder {
     font-family: $oswald;
     font-size: 16px;
     text-align: left;
+  }
+}
+
+.field__name {
+  padding: 15px 0 13px 15px;
+}
+
+.field__weight {
+  padding: 12px 0 14px 21px;
+}
+
+.field__age-old {
+  padding: 13px 0 9px 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .field {
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .field__name {
+    padding: 17px 0 11px 16px;
+  }
+
+  .field__age-old {
+    padding: 17px 0 9px 17px;
   }
 }

@@ -29,6 +29,7 @@
 
   &--comment {
     padding-right: 22px;
+    margin-bottom: 38px;
   }
 
   &--additional {
@@ -83,13 +84,25 @@
 
     &--additional {
       padding-right: 41px;
+      margin-bottom: 57px;
     }
 
     &::after {
       width: 100vw;
-      right: -30px;
+      right: -67px;
+      top: 22px;
       background: linear-gradient(to right, $regular-button 4%, transparent 4% 10%, $regular-button 10% 100%);
     }
+  }
+
+  .field-group__email,
+  .field-group__phone {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .field-group__email {
+    margin-bottom: 20px;
   }
 
   .field-group {

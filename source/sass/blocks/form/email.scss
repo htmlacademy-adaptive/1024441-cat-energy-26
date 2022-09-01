@@ -1,7 +1,7 @@
 @use "./blocks/variables" as*;
 
 .email__field {
-  width: 100%;
+  padding: 13px 0 13px 15px;
 
   &::placeholder {
     font-size: 16px;
@@ -25,12 +25,21 @@
 
 .email__icon {
   position: absolute;
-  top: 8px;
-  right: 10px;
+  top: 14px;
+  right: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .email__title {
     margin-right: 18px;
+  }
+
+  .email__field {
+    padding: 21px 0 14px 23px;
+  }
+
+  .email__icon {
+    top: 18px;
+    right: 17px;
   }
 }

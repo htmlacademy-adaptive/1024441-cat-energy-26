@@ -11,8 +11,7 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 41px;
 }
 
 .features__list {
@@ -25,6 +24,10 @@
   position: relative;
   display: flex;
   margin-bottom: 20px;
+
+  br {
+    display: none;
+  }
 
   &:last-child {
     margin: 0;
@@ -59,16 +62,16 @@
 @media (min-width: $tablet-width) {
   .features {
     position: relative;
-    padding-bottom: 47px;
+    padding-bottom: 60px;
     margin-bottom: 0;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: 30px;
+      bottom: 13px;
       height: 1px;
       width: 100%;
-      background-color: $nav-gray;
+      background-color: #e6e6e6;
     }
   }
 
@@ -81,8 +84,9 @@
   .features__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
+    gap: 37px 77px;
     counter-reset: section;
+    padding-right: 18px;
   }
 
   .features__item {
@@ -92,11 +96,19 @@
     margin: 0;
     padding-top: 40px;
 
+    br {
+      display: block;
+    }
+
+    &:first-child {
+      max-width: 223px;
+    }
+
     &::after {
       position: absolute;
       content: counter(section);
-      top: 0;
-      right: 10%;
+      top: 2px;
+      right: -1px;
       z-index: -1;
       font-family: $oswald;
       font-size: 280px;
@@ -109,9 +121,13 @@
   .features__image-wrapper {
     margin: 0;
     margin-bottom: 31px;
+    width: 80px;
+    height: 80px;
   }
 
   .features__text {
+    font-size: 16px;
+    line-height: 24px;
     padding: 0;
     max-width: 245px;
   }
@@ -120,6 +136,7 @@
 @media (min-width: $desktop-width) {
   .features {
     margin-bottom: 69px;
+    padding: 0;
 
     &::after {
       display: none;
@@ -127,8 +144,23 @@
   }
 
   .features__list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 230px 246px 248px 250px;
     gap: 20px 94px;
+  }
+
+  .features__item {
+    &::after {
+      right: 4px;
+    }
+
+    &:last-child {
+      margin: 0;
+      margin-left: -32px;
+    }
+  }
+
+  .features__item-3 {
+    margin-left: -14px;
   }
 
   .features__text {

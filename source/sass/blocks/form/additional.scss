@@ -1,10 +1,5 @@
 @use "./blocks/variables" as*;
 
-.additional {
-  border: none;
-  margin-bottom: 34px;
-}
-
 .additional__list {
   list-style: none;
   padding: 0;
@@ -28,7 +23,7 @@
   .additional__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 123px;
+    gap: 31px 55px;
   }
 
   .additional__item {
@@ -45,6 +40,6 @@
   .additional__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0 105px;
+    gap: 0 79px;
   }
 }

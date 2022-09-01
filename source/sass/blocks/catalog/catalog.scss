@@ -1,7 +1,7 @@
 @use "./blocks/variables" as*;
 
 .catalog {
-  margin-bottom: 14px;
+  margin-bottom: 26px;
 }
 
 .catalog__list {
@@ -34,8 +34,8 @@
   }
 
   .catalog__item {
-    padding: 0 38px;
-    justify-content: flex-end;
+    padding: 9px 38px 0 38px;
+    justify-content: flex-start;
     padding-bottom: 39px;
     max-width: 324px;
 
@@ -46,6 +46,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 72px;
+  }
+
+  .catalog__list {
+    margin: 0;
+  }
+
   .catalog__item {
     padding-bottom: 40px;
     max-width: 245px;

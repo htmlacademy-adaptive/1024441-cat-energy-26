@@ -52,7 +52,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 
 const copyImages = () => {
 return gulp.src('source/img/content-image/**/*.{png,jpg}')
-.pipe(gulp.dest('build/img'))
+.pipe(gulp.dest('build/img/content-image'))
 }
 
 // WebP
@@ -62,7 +62,7 @@ return gulp.src('source/img/content-image/**/*.{png,jpg}')
 .pipe(squoosh({
 webp: {}
 }))
-.pipe(gulp.dest('build/img'))
+.pipe(gulp.dest('build/img/content-image'))
 }
 
 // SVG
@@ -70,7 +70,7 @@ webp: {}
 const svg = () =>
 gulp.src(['source/img/*.svg', 'source/img/icone/*.svg', '!source/img/icone/social/*.svg'])
 .pipe(svgo())
-.pipe(gulp.dest('build/img'));
+.pipe(gulp.dest('build/img/icone'));
 
 const sprite = () => {
 return gulp.src('source/img/icone/social/*.svg')
@@ -79,7 +79,7 @@ return gulp.src('source/img/icone/social/*.svg')
 inlineSvg: true
 }))
 .pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'));
+.pipe(gulp.dest('build/img/icone'));
 }
 
 // Copy
@@ -88,6 +88,8 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/*.{woff2,woff}',
 'source/*.ico',
+'source/*.webmanifest',
+'source/img/favicons/*.png'
 ], {
 base: 'source'
 })

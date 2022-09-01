@@ -1,7 +1,7 @@
 @use "./blocks/variables" as*;
 
 .show-more {
-  padding-bottom: 24px;
+  padding: 27px 0 27px 0;
   min-height: 158px;
 }
 
@@ -65,7 +65,7 @@
   }
 
   .show-more__wrapper {
-    margin-bottom: 87px;
+    margin-bottom: 67px;
   }
 
   .show-more__icon {
@@ -95,6 +95,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .show-more {
+    padding-top: 30px;
+  }
+
   .show-more__button {
     padding: 20px 39px;
   }

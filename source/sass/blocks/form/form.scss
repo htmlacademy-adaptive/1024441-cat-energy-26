@@ -10,6 +10,7 @@
   margin: 0;
   margin-bottom: 39px;
   text-transform: uppercase;
+  max-width: 226px;
 }
 
 .form__subtitle {
@@ -22,6 +23,19 @@
 .form__field-group {
   border: none;
   padding: 0;
+  margin: 0;
+}
+
+.form__field-group-contact {
+  margin-bottom: 23px;
+}
+
+.form__field-group-comment {
+  margin-bottom: 22px;
+}
+
+.form__field-group-additional {
+  margin-bottom: 30px;
 }
 
 .form__button {
@@ -31,11 +45,11 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  padding: 7px 44px;
+  padding: 9px 44px;
   background-color: $regular-button;
   border: none;
   cursor: pointer;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
   color: $white;
 
   &:hover {
@@ -52,6 +66,18 @@
     padding-bottom: 72px;
   }
 
+  .form__field-group-contact {
+    margin-bottom: 65px;
+  }
+
+  .form__field-group-comment {
+    margin-bottom: 61px;
+  }
+
+  .form__field-group-additional {
+    margin-bottom: 56px;
+  }
+
   .form__title {
     font-size: 20px;
     line-height: 30px;
@@ -62,18 +88,19 @@
   .form__subtitle {
     font-size: 16px;
     line-height: 16px;
+    margin-top: 10px;
   }
 
   .form__footer-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .form__button {
     width: 282px;
     margin: 0;
     margin-right: 61px;
-    padding: 13px 45px;
+    padding: 15px 45px;
     font-size: 20px;
   }
 }
@@ -89,7 +116,20 @@
     gap: 0 80px;
   }
 
+  .form__field-group-contact {
+    margin-bottom: 67px;
+  }
+
+  .form__field-group-comment {
+    margin-bottom: 64px;
+  }
+
+  .form__field-group-additional {
+    margin-bottom: 61px;
+  }
+
   .form__button {
     min-width: 568px;
+    margin-right: 83px;
   }
 }
