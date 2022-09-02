@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.phone__field-wrapper:focus-within .field + .phone__icon {
+.phone__field:focus-within + .phone__icon {
   color: $regular-button;
 }
 

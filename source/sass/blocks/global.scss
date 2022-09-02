@@ -35,3 +35,9 @@ img {
     max-width: $desktop-width;
   }
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

@@ -63,6 +63,14 @@ br {
   }
 }
 
+.service__button-wrapper {
+  overflow: hidden;
+}
+
+.service__icon-arrow {
+  transform: translate(-7px, -3px);
+}
+
 .service__icone {
   &--weight-loss {
     position: absolute;
@@ -104,11 +112,16 @@ br {
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .service__icon-arrow {
+    transform: translate(0, -3px);
+  }
 }
 
 .service__button-text {
   margin-right: 15px;
 }
+
 
 @media (min-width: $tablet-width) {
   .service {

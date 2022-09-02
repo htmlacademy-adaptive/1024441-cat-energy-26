@@ -1,6 +1,7 @@
 @use "./blocks/variables" as*;
 
 .control {
+  display: flex;
   position: relative;
   text-transform: uppercase;
   font-family: $oswald;
@@ -9,12 +10,20 @@
   padding-left: 45px;
 }
 
+.control:focus .control__radio-mark {
+  outline: solid 2px $black;
+}
+
 .control__radio-input {
   display: none;
 }
 
 .control__checkbox-input {
   display: none;
+}
+
+.control__text {
+  margin: 0;
 }
 
 .control__radio-mark {
@@ -52,6 +61,23 @@
   background-image: url("../img/icone/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.control__radio-mark,
+.control__checkbox-mark {
+  &:hover {
+    border-color: $gray-hover;
+  }
+}
+
+.control__radio-input:disabled + .control__radio-mark::after,
+.control__radio-input:disabled + .control__radio-mark + .control__text {
+  opacity: 0.3;
+}
+
+.control__checkbox-input:disabled + .control__checkbox-mark,
+.control__checkbox-input:disabled + .control__checkbox-mark + .control__text {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

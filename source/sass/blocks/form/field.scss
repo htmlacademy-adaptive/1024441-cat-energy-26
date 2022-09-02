@@ -10,18 +10,20 @@
     font-size: 16px;
     text-align: left;
   }
-}
 
-.field__name {
-  padding: 15px 0 13px 15px;
-}
+  &:hover {
+    border-color: $card-gray;
+  }
 
-.field__weight {
-  padding: 12px 0 14px 21px;
-}
+  &:focus {
+    border-color: $regular-color;
+    outline: 1px solid $regular-color;
+  }
 
-.field__age-old {
-  padding: 13px 0 9px 16px;
+  &:focus:invalid {
+    border-color: $invalid;
+    outline: 1px solid $invalid;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -30,13 +32,5 @@
       font-size: 20px;
       line-height: 30px;
     }
-  }
-
-  .field__name {
-    padding: 17px 0 11px 16px;
-  }
-
-  .field__age-old {
-    padding: 17px 0 9px 17px;
   }
 }

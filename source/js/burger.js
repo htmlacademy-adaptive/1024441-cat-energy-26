@@ -2,8 +2,9 @@ let headerContainer = document.querySelector('.main-header__wrapper');
 let navigation = document.querySelector('.main-nav');
 let menu = document.querySelector('.main-nav__list');
 let burger = document.querySelector('.main-header__toggle');
-let width=document.body.clientWidth;
+let map = document.querySelector('.cooperation__image-wrapper');
 
+map.classList.remove('cooperation__image-wrapper--nojs');
 headerContainer.classList.remove('main-header__wrapper--nojs');
 navigation.classList.remove('main-nav--nojs');
 menu.classList.remove('main-nav__list--nojs');

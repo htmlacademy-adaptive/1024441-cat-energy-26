@@ -34,7 +34,7 @@
   display: flex;
 
   &:hover .main-footer__social-icon {
-    stroke: $regular-button;
+    color: $regular-button;
   }
 
   &:active {
@@ -42,6 +42,9 @@
   }
 }
 
+.main-footer__social-icon {
+  color: $gray;
+}
 
 @media (min-width: $tablet-width) {
   .main-footer {

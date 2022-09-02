@@ -37,6 +37,18 @@
   }
 }
 
+.questionnaire__field-name {
+  padding: 15px 0 13px 15px;
+}
+
+.questionnaire__field-weight {
+  padding: 12px 0 14px 21px;
+}
+
+.questionnaire__field-age-old {
+  padding: 13px 0 9px 16px;
+}
+
 @media (min-width: $tablet-width) {
   .questionnaire {
     margin-bottom: 54px;
@@ -58,6 +70,14 @@
 
   .questionnaire__item {
     margin-bottom: 20px;
+  }
+
+  .questionnaire__field-name {
+    padding: 17px 0 11px 16px;
+  }
+
+  .questionnaire__field-age-old {
+    padding: 17px 0 9px 17px;
   }
 }
 

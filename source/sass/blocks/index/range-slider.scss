@@ -40,6 +40,16 @@
       background-color: $regular-button;
     }
   }
+
+  &:active .range-slider__button-icon {
+    opacity: 0.6;
+  }
+
+  &:active + .range-slider__line {
+    &::after {
+      opacity: 0.6;
+    }
+  }
 }
 
 .range-slider__button-icon {
@@ -99,9 +109,9 @@
 
 @media (min-width: $desktop-width) {
   .range-slider {
-    position: relative;
-    top: -123px;
-    left: 8px;
+    position: absolute;
+    top: -207px;
+    right: -8px;
   }
 
   .range-slider__button,
