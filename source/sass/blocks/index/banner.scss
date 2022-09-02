@@ -74,7 +74,7 @@
   }
 
   &:active {
-    opacity: 0.4;
+    color: $white-active;
   }
 }
 
@@ -136,7 +136,7 @@
 
 @media (min-width: $desktop-width) {
   .banner {
-    padding: 26px 0 0 190px;
+    padding: 26px 0 0 0;
     min-height: 553px;
     margin-bottom: 24px;
 
@@ -160,6 +160,22 @@
         background-size: cover;
       }
     }
+  }
+
+  .banner-content-wrapper {
+    width: 100%;
+    padding: 0 110px;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .banner__container {
+    padding-left: 79px;
+  }
+
+  .banner__wrapper {
+    padding-left: 190px;
   }
 
   .banner__image-wrapper {

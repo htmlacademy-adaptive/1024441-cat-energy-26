@@ -158,13 +158,18 @@
 
 @media (min-width: $desktop-width) {
   .product-example {
-    max-height: 597px;
     padding: 0;
+    padding-bottom: 77px;
     background: linear-gradient(to bottom, transparent 0, transparent 23%, #eaeaea 23%);
+  }
+
+  .product-example__title {
+    margin-bottom: 146px;
   }
 
   .product-example__container {
     display: flex;
+    position: relative;
     justify-content: space-between;
   }
 
@@ -177,7 +182,6 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    padding-top: 85px;
     justify-content: flex-start;
   }
 

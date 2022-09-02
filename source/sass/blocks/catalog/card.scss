@@ -10,6 +10,10 @@
   max-width: 140px;
 }
 
+.card__link-wrapper {
+  text-decoration: none;
+}
+
 .card__title {
   font-family: $oswald;
   font-weight: inherit;
@@ -50,7 +54,7 @@
   }
 
   &:active {
-    opacity: 0.4;
+    color: $white-active;
   }
 }
 

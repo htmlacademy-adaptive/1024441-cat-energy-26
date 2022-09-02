@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.email__field-wrapper:focus-within .field + .email__icon {
+.email__field:focus-within + .email__icon {
   color: $regular-button;
 }
 

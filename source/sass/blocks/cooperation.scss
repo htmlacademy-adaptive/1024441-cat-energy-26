@@ -37,6 +37,19 @@
   width: 100%;
 }
 
+.cooperation__image-wrapper {
+  display: none;
+
+  &--nojs {
+    display: block;
+  }
+}
+
+.cooperation__map-imge {
+  max-width: 100%;
+  max-height: 362px;
+}
+
 .cooperation__map {
   min-width: 100%;
   min-height: 362px;
@@ -70,6 +83,10 @@
   .cooperation__address-last-part {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .cooperation__map-image {
+    max-height: 400px;
   }
 
   .cooperation__map {
