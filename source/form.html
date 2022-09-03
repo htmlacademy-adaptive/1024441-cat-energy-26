@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -75,31 +77,31 @@
               <ul class="criteria__list">
                 <li class="criteria__item">
                   <label class="criteria__item-control control">
-                    <input class="control__radio-input radio-input" name="purpose" value="weight-loss" type="radio"
+                    <input class="control__radio-input radio-input visually-hidden" name="purpose" value="weight-loss" type="radio"
                       checked>
                     <span class="control__radio-mark"></span>
-                    <p class="control__text">
+                    <span class="control__text">
                       похудение
-                    </p>
+                    </span>
                   </label>
                 </li>
                 <li class="criteria__item">
                   <label class="criteria__item-control control">
-                    <input class="control__radio-input radio-input" name="purpose" value="weight-gain" type="radio">
+                    <input class="control__radio-input radio-input visually-hidden" name="purpose" value="weight-gain" type="radio">
                     <span class="control__radio-mark"></span>
-                    <p class="control__text">
+                    <span class="control__text">
                       Набор массы
-                    </p>
+                    </span>
 
                   </label>
                 </li>
                 <li class="criteria__item criteria__item--last-item">
                   <label class="criteria__item-control control">
-                    <input class="control__radio-input radio-input" name="purpose" value="don't-know" type="radio">
+                    <input class="control__radio-input radio-input visually-hidden" name="purpose" value="don't-know" type="radio">
                     <span class="control__radio-mark"></span>
-                    <p class="control__text">
+                    <span class="control__text">
                       Не знаю (Нужен ваш совет)
-                    </p>
+                    </span>
                   </label>
                 </li>
               </ul>
@@ -151,40 +153,40 @@
             <ul class="additional__list">
               <li class="additional__item">
                 <label class="additional__item-control control">
-                  <input class="control__checkbox-input checkbox-input" type="checkbox" name="
+                  <input class="control__checkbox-input checkbox-input visually-hidden" type="checkbox" name="
               sweetener" checked>
                   <span class="control__checkbox-mark"></span>
-                  <p class="control__text">
+                  <span class="control__text">
                     сахарозаменитель
-                  </p>
+                  </span>
                 </label>
               </li>
               <li class="additional__item">
                 <label class="additional__item-control control">
-                  <input class="control__checkbox-input checkbox-input" type="checkbox" name="water">
+                  <input class="control__checkbox-input checkbox-input visually-hidden" type="checkbox" name="water">
                   <span class="control__checkbox-mark"></span>
-                  <p class="control__text">
+                  <span class="control__text">
                     питьевая вода
-                  </p>
+                  </span>
                 </label>
               </li>
               <li class="additional__item">
                 <label class="additional__item__control control">
-                  <input class="control__checkbox-input checkbox-input" type="checkbox" name="
+                  <input class="control__checkbox-input checkbox-input visually-hidden" type="checkbox" name="
               milk">
                   <span class="control__checkbox-mark"></span>
-                  <p class="control__text">
+                  <span class="control__text">
                     молоко
-                  </p>
+                  </span>
                 </label>
               </li>
               <li class="additional__item">
                 <label class="additional__item__control control">
-                  <input class="control__checkbox-input checkbox-input" type="checkbox" name="vitamins">
+                  <input class="control__checkbox-input checkbox-input visually-hidden" type="checkbox" name="vitamins">
                   <span class="control__checkbox-mark"></span>
-                  <p class="control__text">
+                  <span class="control__text">
                     витамины
-                  </p>
+                  </span>
                 </label>
               </li>
             </ul>

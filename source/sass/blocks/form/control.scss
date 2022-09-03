@@ -10,18 +10,6 @@
   padding-left: 45px;
 }
 
-.control:focus .control__radio-mark {
-  outline: solid 2px $black;
-}
-
-.control__radio-input {
-  display: none;
-}
-
-.control__checkbox-input {
-  display: none;
-}
-
 .control__text {
   margin: 0;
 }
@@ -68,6 +56,12 @@
   &:hover {
     border-color: $gray-hover;
   }
+}
+
+.control__radio-input:focus + .control__radio-mark,
+.control__checkbox-input:focus + .control__checkbox-mark {
+  outline: 2px solid $regular-button;
+  outline-offset: 2px;
 }
 
 .control__radio-input:disabled + .control__radio-mark::after,
